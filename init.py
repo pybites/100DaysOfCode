@@ -10,8 +10,12 @@ HEADER = '''## {}
 
 Inpired by [Join the #100DaysOfCode](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.qmiel1bhd).
 
-### Progress Log\n\n'''.format(TITLE)
-DAY = '* Day {0} - {1}: [SHORT_TITLE_SCRIPT]({0}) - learning: SUMMARY_YOUR_LEARNING\n'
+### Progress Log
+
+| Day | Date | Created | Learned |
+| --- | --- | --- | --- |
+'''.format(TITLE)
+DAY = '| {0} | {1} | [TITLE]({0}) | LEARNING |\n'
 INIT_FILE = '__init__.py'
 AUTHOR = "__author__ = 'PyBites'\n"
 
