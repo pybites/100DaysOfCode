@@ -1,20 +1,15 @@
 import datetime
 import os
 
-README = 'README.md'
+LOG = 'LOG.md'
 DAY_ZERO = datetime.datetime(2017, 3, 29)  # = PyBites 100 days :)
 NUM_DAYS = 100
 NUM_WIDTH = 3
-TITLE = 'PyBites 100 Days Of Code Challenge'
-HEADER = '''## {}
-
-Inpired by [Join the #100DaysOfCode](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.qmiel1bhd).
-
-### Progress Log
+TABLE_HEADER = '''## Progress Log
 
 | Day | Date | Created | Learned |
 | --- | --- | --- | --- |
-'''.format(TITLE)
+'''
 DAY = '| {0} | {1} | [TITLE]({0}) | LEARNING |\n'
 INIT_FILE = '__init__.py'
 AUTHOR = "__author__ = 'PyBites'\n"
@@ -32,10 +27,10 @@ def get_date(day):
     return date.strftime('%b %d, %Y')
 
 
-def create_readme():
-    '''Create readme file with progress log template'''
-    with open(README, 'w') as f:
-        f.write(HEADER)
+def create_log():
+    '''Create progress log file with markdown table '''
+    with open(LOG, 'w') as f:
+        f.write(TABLE_HEADER)
         for d in gen_days():
             date = get_date(d)
             f.write(DAY.format(d, date))
@@ -50,11 +45,11 @@ def create_init(path):
 
 
 if __name__ == '__main__':
-    if os.path.isfile(README):
-        print('README already created')
+    if os.path.isfile(LOG):
+        print('Logfile already created')
     else:
-        print('Creating README')
-        create_readme()
+        print('Creating logfile')
+        create_log()
 
     dirs = [d for d in gen_days() if not os.path.isdir(d)]
     if not dirs:
