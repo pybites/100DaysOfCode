@@ -1,5 +1,7 @@
 ## PyBites 100 Days Of Code Challenge
 
-* Progress [log](LOG.md).
+* See our article: [100 Days of PyBites, 100 Days of Code](http://pybit.es/special-100days).
 
-* Inpired by [Join the #100DaysOfCode](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.qmiel1bhd).
+* We will update this [process log](LOG.md) as we go and [tweet](https://twitter.com/pybites) with the #100DaysOfCode hashtag.
+
+* Inspiration by [Free Code Camp / Alexander Kallaway](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4#.qmiel1bhd).
