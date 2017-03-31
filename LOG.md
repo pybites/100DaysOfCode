@@ -3,7 +3,7 @@
 | Day | Date | Created | Learned |
 | --- | --- | --- | --- |
 | 001 | Mar 30, 2017 | [script to check if tip already submitted to @python_tip](001) | Urlopen, 2vs3, csv parsing, namedtuples, contextlib |
-| 002 | Mar 31, 2017 | [TITLE](002) | LEARNING |
+| 002 | Mar 31, 2017 | [script to print out valid IPs of a specified user specified network](002) | ipaddress, simplifying and automating tedious/manual process |
 | 003 | Apr 01, 2017 | [TITLE](003) | LEARNING |
 | 004 | Apr 02, 2017 | [TITLE](004) | LEARNING |
 | 005 | Apr 03, 2017 | [TITLE](005) | LEARNING |
