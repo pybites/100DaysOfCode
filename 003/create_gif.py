@@ -1,5 +1,4 @@
-'''Script to convert multiple images into a gif.
-Solution found our beloved SO:
+'''Script to convert multiple images into a gif. Found out about imageio here:
 http://stackoverflow.com/questions/753190/programmatically-generate-video-or-animated-gif-in-python'''
 import glob
 import sys
