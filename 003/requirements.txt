@@ -1,0 +1,4 @@
+imageio==2.1.2
+numpy==1.12.1
+olefile==0.44
+Pillow==4.0.0
