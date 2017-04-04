@@ -54,8 +54,9 @@ def tweet_status(tweet):
 if __name__ == '__main__':
     import socket
     local = 'MacBook' in socket.gethostname()
+    test = local or 'dry' in sys.argv[1:]
 
-    if local:
+    if test:
         log = os.path.basename(LOG)
         with open(log) as f:
             html = f.readlines()
@@ -68,7 +69,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     tweet = create_tweet(m)
-    if local:
-        logging.info('Local test: tweet to send: {}'.format(tweet))
+    if test:
+        logging.info('Test: tweet to send: {}'.format(tweet))
     else:
         tweet_status(tweet)
