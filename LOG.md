@@ -7,7 +7,7 @@
 | 003 | Apr 01, 2017 | [script to generate a gif from various png/jpg images](003) | useful for blog, awesome: pip install imageio, cli arg interface is more code :) |
 | 004 | Apr 02, 2017 | [script that converts a text list to a text string](004) | useful for tedious sysadmin tasks. Pyperclip is used to read in a list copied to clipboard and convert it to a single line string separated by spaces. |
 | 005 | Apr 03, 2017 | [script to create a 100DaysOfCode tweet](005) | takes a date or defaults to today, reads this LOG file in and creates a tweet about our progress (to be automated) |
-| 006 | Apr 04, 2017 | [TITLE](006) | LEARNING |
+| 006 | Apr 04, 2017 | [simple reusable code snippet to print a dict](006) | reusable code snippet to print the keys and values of a dict. Includes a demo dict. Short and sweet. |
 | 007 | Apr 05, 2017 | [TITLE](007) | LEARNING |
 | 008 | Apr 06, 2017 | [TITLE](008) | LEARNING |
 | 009 | Apr 07, 2017 | [TITLE](009) | LEARNING |
