@@ -8,7 +8,7 @@
 | 004 | Apr 02, 2017 | [script that converts a text list to a text string](004) | useful for tedious sysadmin tasks. Pyperclip is used to read in a list copied to clipboard and convert it to a single line string separated by spaces. |
 | 005 | Apr 03, 2017 | [script to create a 100DaysOfCode tweet](005) | takes a date or defaults to today, reads this LOG file in and creates a tweet about our progress (to be automated) |
 | 006 | Apr 04, 2017 | [simple reusable code snippet to print a dict](006) | reusable code snippet to print the keys and values of a dict. Includes a demo dict. Short and sweet. |
-| 007 | Apr 05, 2017 | [TITLE](007) | LEARNING |
+| 007 | Apr 05, 2017 | [script to automatically tweet 100DayOfCode progress tweet](007) | twitter API, manage config outside source, logging, date parsing and timezones |
 | 008 | Apr 06, 2017 | [TITLE](008) | LEARNING |
 | 009 | Apr 07, 2017 | [TITLE](009) | LEARNING |
 | 010 | Apr 08, 2017 | [TITLE](010) | LEARNING |
