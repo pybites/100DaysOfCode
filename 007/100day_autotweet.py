@@ -16,6 +16,8 @@ CURRENT_CHALLENGE_DAY = str((now - start).days).zfill(3)
 LOG = 'https://raw.githubusercontent.com/pybites/100DaysOfCode/master/LOG.md'
 LOG_ENTRY = re.compile(r'\[(?P<title>.*?)\]\((?P<day>\d+)\)')
 REPO_URL = 'https://github.com/pybites/100DaysOfCode/tree/master/'
+TWEET_LEN = 140
+TWEET_LINK_LEN = 23
 
 
 def get_log():
@@ -38,9 +40,16 @@ def create_tweet(m):
     title = m['title']
     day = m['day']
     url = REPO_URL + day
+    allowed_len = TWEET_LEN + len(url) - TWEET_LINK_LEN
 
     fmt = '{} - Day {}: {} {} {}'
-    return fmt.format(ht1, day, title, url, ht2)
+    tweet = fmt.format(ht1, day, title, url, ht2)
+    surplus = len(tweet) - allowed_len
+
+    if surplus > 0:
+        new_title = title[:-(surplus + 4)] + '...'
+        tweet = tweet.replace(title, new_title)
+    return tweet
 
 
 def tweet_status(tweet):
