@@ -9,7 +9,7 @@
 | 005 | Apr 03, 2017 | [script to create a 100DaysOfCode tweet](005) | takes a date or defaults to today, reads this LOG file in and creates a tweet about our progress (to be automated) |
 | 006 | Apr 04, 2017 | [simple reusable code snippet to print a dict](006) | reusable code snippet to print the keys and values of a dict. Includes a demo dict. Short and sweet. |
 | 007 | Apr 05, 2017 | [script to automatically tweet 100DayOfCode progress tweet](007) | twitter API, manage config outside source, logging, date parsing and timezones |
-| 008 | Apr 06, 2017 | [TITLE](008) | LEARNING |
+| 008 | Apr 06, 2017 | [reusable python flask html template for printing a dict](008) | reusable python flask html template that uses a for loop to print dict contents - flask |
 | 009 | Apr 07, 2017 | [TITLE](009) | LEARNING |
 | 010 | Apr 08, 2017 | [TITLE](010) | LEARNING |
 | 011 | Apr 09, 2017 | [TITLE](011) | LEARNING |
