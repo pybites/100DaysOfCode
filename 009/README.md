@@ -1,4 +1,4 @@
-## README
+## 009
 
 Interactive script / template to create a new Pelican article with header / meta fields. Warning: makes life easier ;)
 
