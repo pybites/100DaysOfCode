@@ -84,7 +84,7 @@ def main():
 
     special_day, age = today_is_special_day()
 
-    if special_day or 1:
+    if special_day:
         print(CELEBRATION_MSG.format(age=age, prefix=SPECIAL_SLUG_PREFIX))
         image = SPECIAL_IMAGE
 
