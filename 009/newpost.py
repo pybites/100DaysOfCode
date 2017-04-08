@@ -6,7 +6,8 @@ import sys
 
 import requests
 
-PYB_CONTENT_DIR = os.environ.get('PYB_CONTENT_DIR') or sys.exit('Set PYB_CONTENT_DIR env var')
+PYB_CONTENT_DIR = os.environ.get('PYB_CONTENT_DIR') \
+    or sys.exit('Set PYB_CONTENT_DIR env var')
 LOGGED_IN_USER = os.getlogin()
 DEFAULT_HOURS = 2
 DEFAULT_IMAGE, SPECIAL_IMAGE = 'pb-article.png', 'pb-special.png'
@@ -33,7 +34,7 @@ POST_END = '''
 Keep Calm and Code in Python!
 
 -- {author}'''
-CELEBRATION_MSG = '''*** HAPPY {age} DAYS PYBITES CELEBRATION !! ***
+CELEBRATION_MSG = '''*** HAPPY PYBITES CELEBRATION ({occasion}) !! ***
 
 Hey, maybe you want to write something special today?!
 
@@ -48,8 +49,11 @@ PyBites definitely loves to automate stuff :)
 '''
 PYB_START = date(year=2016, month=12, day=19)
 SPECIAL_DAY_OFFSETS = (100, 365)
+SPECIAL_POST_NUM = 100
 SPECIAL_SLUG_PREFIX = 'special'
-TAG_URL = 'http://pybit.es/tags.html'
+BASE_URL = 'http://pybit.es'
+TAG_URL = '{}/tags.html'.format(BASE_URL)
+AUTHORS_URL = '{}/authors.html'.format(BASE_URL)
 
 
 def get_future_time(hours=DEFAULT_HOURS):
@@ -59,15 +63,36 @@ def get_future_time(hours=DEFAULT_HOURS):
 
 
 def get_cats_or_tags(page, urldir):
-    category = re.compile(r'<a href="http://pybit.es/%s/[^"]+">(\w+)</a>' % urldir)
+    category = re.compile(
+        r'<a href="http://pybit.es/%s/[^"]+">(\w+)</a>'
+        % urldir)
     html = requests.get('http://pybit.es/{}.html'.format(page)).text
     return category.findall(html)
 
 
 def today_is_special_day():
+    num_posts = get_num_posts()
+    if num_posts % SPECIAL_POST_NUM == 0:
+        return True, '{} posts'.format(num_posts)
+
+    age = get_age()
+    if any(map(lambda x: age % x == 0, SPECIAL_DAY_OFFSETS)):
+        return True, '{} days'.format(age)
+
+    return False, 'No celebration'
+
+
+def get_age():
     today = date.today()
-    age = (today - PYB_START).days
-    return any(map(lambda x: age % x == 0, SPECIAL_DAY_OFFSETS)), age
+    return (today - PYB_START).days
+
+
+def get_num_posts():
+    posts = re.compile(
+        r'<a href="%s/author/[^"]+">\w+</a>\s\((\d+)\)'
+        % BASE_URL)
+    html = requests.get(AUTHORS_URL).text
+    return sum(int(num) for num in posts.findall(html))
 
 
 def write_template(slug, content):
@@ -82,10 +107,11 @@ def main():
     print('Lets write a new article :)')
     print()
 
-    special_day, age = today_is_special_day()
+    special_day, occasion = today_is_special_day()
 
     if special_day:
-        print(CELEBRATION_MSG.format(age=age, prefix=SPECIAL_SLUG_PREFIX))
+        print(CELEBRATION_MSG.format(occasion=occasion,
+                                     prefix=SPECIAL_SLUG_PREFIX))
         image = SPECIAL_IMAGE
 
         author = 'PyBites'
@@ -101,8 +127,8 @@ def main():
         if inp:
             author = inp.strip().title()
 
-        used_categories = ', '.join(get_cats_or_tags('categories', 'category'))
-        category = input('Select a category [used: {}]: '.format(used_categories))
+        categories = ', '.join(get_cats_or_tags('categories', 'category'))
+        category = input('Select a category [used: {}]: '.format(categories))
 
     hours = input('Publish in hours from now [{}]: '.format(DEFAULT_HOURS))
     try:
@@ -111,17 +137,16 @@ def main():
         if hours:
             print('Not an int value, using default ({})'.format(DEFAULT_HOURS))
         else:
-            print('No hours inputted, using default ({})'.format(DEFAULT_HOURS))
+            print('No hours given, using default ({})'.format(DEFAULT_HOURS))
         hours = DEFAULT_HOURS
     post_time = get_future_time(hours)
 
-    # used_tags = ', '.join(get_cats_or_tags('tags', 'tag'))
-    # tags = input('Select > 1 tags (comma seperated) [{}]: '.format(used_tags))
-    tags = input('Select > 1 tags (comma seperated) [used: {}]: '.format(TAG_URL))
+    tags = input('Select tags (comma seperated) [used: {}]: '.format(TAG_URL))
     tags = ', '.join([tag.strip() for tag in tags.split(',')])
 
     summary = input('A compelling summary please (this shows up in Google!): ')
-    title = input('A gripping title (make it awesome, ok?): ').replace(':', '')  # pelican does not like colons in title
+    title = input('A gripping title (make it awesome, ok?): ')
+    title = title.replace(':', '')  # pelican does not like colons in title
     slug = input('And lastly make the slug (= filename) - SEO counts, ok? ')
 
     if special_day and SPECIAL_SLUG_PREFIX not in slug:
