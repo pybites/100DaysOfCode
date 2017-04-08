@@ -11,7 +11,7 @@
 | 007 | Apr 05, 2017 | [script to automatically tweet 100DayOfCode progress tweet](007) | twitter API, manage config outside source, logging, date parsing and timezones |
 | 008 | Apr 06, 2017 | [reusable python flask html template for printing a dict](008) | reusable python flask html template that uses a for loop to print dict contents - flask |
 | 009 | Apr 07, 2017 | [interactive script to create a new Pelican blog article](009) | lot of known concepts, but nice to bring a lot of functionality together, and above all a really useful script for our blog |
-| 010 | Apr 08, 2017 | [TITLE](010) | LEARNING |
+| 010 | Apr 08, 2017 | [script to spot cheap @transavia flights using their #API](010) | this was a nice exercise, and a very useful script for a monitoring cron job. TODO: wrap it in a Flask web app. Some modules I explored: calendar, datetime, dateutil.relativedelta, requests_cache |
 | 011 | Apr 09, 2017 | [TITLE](011) | LEARNING |
 | 012 | Apr 10, 2017 | [TITLE](012) | LEARNING |
 | 013 | Apr 11, 2017 | [TITLE](013) | LEARNING |
