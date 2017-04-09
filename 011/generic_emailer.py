@@ -18,9 +18,6 @@ msg['Subject'] = 'My Subject Line'
 
 with open(DATA_FILE) as f:
     body = f.read()
-#file_data = open(DATA_FILE)
-#body = file_data.read()
-#file_data.close()
 
 msg.attach(MIMEText(body, 'plain'))
 
