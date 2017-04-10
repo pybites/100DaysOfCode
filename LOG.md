@@ -13,7 +13,7 @@
 | 009 | Apr 07, 2017 | [interactive script to create a new Pelican blog article](009) | lot of known concepts, but nice to bring a lot of functionality together, and above all a really useful script for our blog |
 | 010 | Apr 08, 2017 | [script to spot cheap @transavia flights using their #API](010) | this was a nice exercise, and a very useful script for a monitoring cron job. TODO: wrap it in a Flask web app. Some modules I explored: calendar, datetime, dateutil.relativedelta, requests_cache |
 | 011 | Apr 09, 2017 | [generic script to email the contents of a text file](011) | a script that uses your gmail account to email the contents of a text file. Current use case is to email web scraped data. smtplib, email, MIME |
-| 012 | Apr 10, 2017 | [TITLE](012) | LEARNING |
+| 012 | Apr 10, 2017 | [using OpenWeatherMap #API to compare weather in Australia vs Spain](012) | OpenWeatherMap API, pytz for timezone handling, datetime.utcfromtimestamp to parse unix timestamp to datetime, Google confirms sunset / sunrise times correct :) |
 | 013 | Apr 11, 2017 | [TITLE](013) | LEARNING |
 | 014 | Apr 12, 2017 | [TITLE](014) | LEARNING |
 | 015 | Apr 13, 2017 | [TITLE](015) | LEARNING |
