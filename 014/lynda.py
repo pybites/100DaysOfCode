@@ -42,7 +42,7 @@ if __name__ == '__main__':
         print('Usage: $ python {} <grep>'.format(sys.argv[0]))
         sys.exit(1)
 
-    grep = sys.argv[1]
+    grep = sys.argv[1].title()
 
     for tweet in get_tweets(grep):
         tweet_status(tweet)
