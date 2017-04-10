@@ -14,7 +14,9 @@
 
 <br><hr><br>
 
-{% if data %}
+{% if error %}
+    <p class='alert'>{{ error }}</p>
+{% elif data %}
     <table class="centered thick-border">
         <tr>
             <th>City</th>
@@ -26,7 +28,7 @@
         </tr>
         {% for d in data %}
             <tr>
-                <td>{{ d['name'] }}</td>
+                <td>{{ d['name'] }} ({{ d['sys']['country'] }})</td>
                 <td>{{ d['weather'][0]['description'] }}</td>
                 <td>{{ d['main']['temp'] }} °C</td>
                 <td>{{ d['main']['humidity'] }}</td>

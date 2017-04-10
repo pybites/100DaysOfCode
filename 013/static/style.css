@@ -16,3 +16,7 @@ th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
+.alert {
+    border: 1px solid red;
+    font-weight: bold;
+}

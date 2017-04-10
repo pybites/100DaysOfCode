@@ -9,13 +9,19 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def index():
     data = []
+    error = None
     if request.method == 'POST':
         city1 = request.form.get('city1')
         city2 = request.form.get('city2')
-        data.append(query_api(city1))
-        data.append(query_api(city2))
+        for c in (city1, city2):
+            resp = query_api(c)
+            if resp:
+                data.append(resp)
+        if len(data) != 2:
+            error = 'Did not get complete response from Weather API'
     return render_template("weather.html",
                            data=data,
+                           error=error,
                            time=get_local_time)
 
 

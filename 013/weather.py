@@ -28,5 +28,6 @@ def query_api(city):
     try:
         data = requests.get(API_URL.format(city, API_KEY)).json()
     except Exception as exc:
+        print(exc)
         data = None
     return data
