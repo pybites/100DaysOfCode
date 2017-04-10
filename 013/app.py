@@ -1,3 +1,5 @@
+from pprint import pprint as pp
+
 from flask import Flask, render_template, request
 
 from weather import get_local_time, query_api
@@ -15,6 +17,7 @@ def index():
         city2 = request.form.get('city2')
         for c in (city1, city2):
             resp = query_api(c)
+            pp(resp)
             if resp:
                 data.append(resp)
         if len(data) != 2:
