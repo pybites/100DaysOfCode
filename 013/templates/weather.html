@@ -1,0 +1,38 @@
+<!doctype html>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<h1>Compare the Weather of 2 Cities: </h1>
+                               
+<form action="/" method="POST">
+    <label>Enter city #1: </label>
+    <input type="text" name="city1" value="{{ request.form['city1'] }}" />
+    <label>Enter city #2: </label>
+    <input type="text" name="city2" value="{{ request.form['city2'] }}" />
+	<button type="submit">Go</button>
+</form>
+
+<br><hr><br>
+
+{% if data %}
+    <table class="centered thick-border">
+        <tr>
+            <th>City</th>
+            <th>Description</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Sunrise</th>
+            <th>Sunset</th>
+        </tr>
+        {% for d in data %}
+            <tr>
+                <td>{{ d['name'] }}</td>
+                <td>{{ d['weather'][0]['description'] }}</td>
+                <td>{{ d['main']['temp'] }} °C</td>
+                <td>{{ d['main']['humidity'] }}</td>
+                <td>{{ time(d['sys']['sunrise'], d['sys']['country'], d['name']) }}</td>
+                <td>{{ time(d['sys']['sunset'], d['sys']['country'], d['name']) }}</td>
+            </tr>		
+        {% endfor %}
+    </table>
+{% endif %}
