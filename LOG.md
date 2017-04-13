@@ -16,7 +16,7 @@
 | 012 | Apr 10, 2017 | [using OpenWeatherMap #API to compare weather in Australia vs Spain](012) | OpenWeatherMap API, pytz for timezone handling, datetime.utcfromtimestamp to parse unix timestamp to datetime, Google confirms sunset / sunrise times correct :) |
 | 013 | Apr 11, 2017 | [simple #Flask app to compare weather of 2 cities (using OpenWeatherMap #API)](013) | This was a nice follow-up of 012, making it more generic (support any city), using Jinja templating, Flask form handling, and of course a good chunk of timezone handling (for sunset and sunrise) |
 | 014 | Apr 12, 2017 | [script to automatically tweet out new @lynda (#Python) titles](014) | feedparser is awesome. Want to run it with filter on Python. Abstracted twitter config away in repo's common dir (re-use). |
-| 015 | Apr 13, 2017 | [TITLE](015) | LEARNING |
+| 015 | Apr 13, 2017 | [script to calculate the number of posts on @pybites](015) | tried stdlib only, so urllib.request.urlretrieve, not requests. Option (-t) to test with cached file, re.findall, dict comprehension. |
 | 016 | Apr 14, 2017 | [TITLE](016) | LEARNING |
 | 017 | Apr 15, 2017 | [TITLE](017) | LEARNING |
 | 018 | Apr 16, 2017 | [TITLE](018) | LEARNING |
