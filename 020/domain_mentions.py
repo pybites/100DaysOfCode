@@ -1,17 +1,17 @@
+import configparser
 import logging
-import os
 
 from slacker import Slacker
 from twython import TwythonStreamer
 
-# Twitter API
-CONSUMER_KEY = os.environ["CONSUMER_KEY"]
-CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]
-ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
-ACCESS_SECRET = os.environ["ACCESS_SECRET"]
+config = configparser.ConfigParser()
+config.read('config.ini')
 
-# Slack API
-SLACK_TOKEN = os.environ["SLACK_BOT_TOKEN"]
+CONSUMER_KEY = config['Twitter']['cs_key']
+CONSUMER_SECRET = config['Twitter']['cs_secret']
+ACCESS_TOKEN = config['Twitter']['acc_token']
+ACCESS_SECRET = config['Twitter']['acc_secret']
+SLACK_TOKEN = config['Slack']["token"]
 
 CHANNEL = '#pybites-mentions'
 DOMAIN = ('pybit', 'es')

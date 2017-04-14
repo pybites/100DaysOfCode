@@ -1,0 +1,8 @@
+[Twitter]
+cs_key = xyz
+cs_secret = xyz
+acc_token = xyz
+acc_secret = xyz
+
+[Slack]
+token = xyz
