@@ -17,7 +17,7 @@
 | 013 | Apr 11, 2017 | [simple #Flask app to compare weather of 2 cities (using OpenWeatherMap #API)](013) | This was a nice follow-up of 012, making it more generic (support any city), using Jinja templating, Flask form handling, and of course a good chunk of timezone handling (for sunset and sunrise) |
 | 014 | Apr 12, 2017 | [script to automatically tweet out new @lynda (#Python) titles](014) | feedparser is awesome. Want to run it with filter on Python. Abstracted twitter config away in repo's common dir (re-use). |
 | 015 | Apr 13, 2017 | [script to calculate the number of posts on @pybites](015) | small script but some interesting things: urllib.request.urlretrieve (stdlib), test and cache option (using os.start for cache file age), re.findall, dict comprehension. |
-| 016 | Apr 14, 2017 | [TITLE](016) | LEARNING |
+| 016 | Apr 14, 2017 | [script to #ssh to specified IPs and check their hostnames](016) | Generic script to ssh to a list of IPs and run a command using paramiko. This can obviously  be altered for many purposes, not just hostname checks. The code is quite flexible. |
 | 017 | Apr 15, 2017 | [script to automatically tweet out new @safari Python titles](017) | like the Lynda one, parsing an RSS feed, but only stdlib, so no feedparser, using xml.etree.ElementTree, no requests, using urllib. Also nice exercise converting and calculating with datetime / timedelta |
 | 018 | Apr 16, 2017 | [using #pytest to write tests for @safari RSS scraper (day 017)](018) | testing is a good skill to keep honing. It lets you define your design better and look for edge cases that saves debug headaches later on. pytest is nice, to be further explored ... |
 | 019 | Apr 17, 2017 | [TITLE](019) | LEARNING |
