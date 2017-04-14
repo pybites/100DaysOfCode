@@ -18,7 +18,7 @@
 | 014 | Apr 12, 2017 | [script to automatically tweet out new @lynda (#Python) titles](014) | feedparser is awesome. Want to run it with filter on Python. Abstracted twitter config away in repo's common dir (re-use). |
 | 015 | Apr 13, 2017 | [script to calculate the number of posts on @pybites](015) | small script but some interesting things: urllib.request.urlretrieve (stdlib), test and cache option (using os.start for cache file age), re.findall, dict comprehension. |
 | 016 | Apr 14, 2017 | [TITLE](016) | LEARNING |
-| 017 | Apr 15, 2017 | [TITLE](017) | LEARNING |
+| 017 | Apr 15, 2017 | [script to automatically tweet out new @safari Python titles](017) | like the Lynda one, parsing an RSS feed, but only stdlib, so no feedparser, using xml.etree.ElementTree, no requests, using urllib. Also nice exercise converting and calculating with datetime / timedelta |
 | 018 | Apr 16, 2017 | [TITLE](018) | LEARNING |
 | 019 | Apr 17, 2017 | [TITLE](019) | LEARNING |
 | 020 | Apr 18, 2017 | [TITLE](020) | LEARNING |
