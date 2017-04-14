@@ -21,7 +21,7 @@
 | 017 | Apr 15, 2017 | [script to automatically tweet out new @safari Python titles](017) | like the Lynda one, parsing an RSS feed, but only stdlib, so no feedparser, using xml.etree.ElementTree, no requests, using urllib. Also nice exercise converting and calculating with datetime / timedelta |
 | 018 | Apr 16, 2017 | [using #pytest to write tests for @safari RSS scraper (day 017)](018) | testing is a good skill to keep honing. It lets you define your design better and look for edge cases that saves debug headaches later on. pytest is nice, to be further explored ... |
 | 019 | Apr 17, 2017 | [TITLE](019) | LEARNING |
-| 020 | Apr 18, 2017 | [monitor Twitter and post to a #slack channel each time our domain is mentioned](020) | useful script and exercise. Twitter + Slack API combined == awesome. Aim was to clone/ replace mediatrigger.io (got bothered free trial will end one day ...) |
+| 020 | Apr 18, 2017 | [monitor #Twitter and post to #slack each time our domain gets mentioned](020) | useful script and exercise. Twitter + Slack API combined == awesome. Aim was to clone/ replace mediatrigger.io (got bothered free trial will end one day ...) |
 | 021 | Apr 19, 2017 | [TITLE](021) | LEARNING |
 | 022 | Apr 20, 2017 | [TITLE](022) | LEARNING |
 | 023 | Apr 21, 2017 | [TITLE](023) | LEARNING |
