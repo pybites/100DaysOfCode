@@ -1,0 +1,4 @@
+oauthlib==2.0.2
+requests==2.13.0
+requests-oauthlib==0.8.0
+twython==3.4.0
