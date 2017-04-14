@@ -19,7 +19,7 @@
 | 015 | Apr 13, 2017 | [script to calculate the number of posts on @pybites](015) | small script but some interesting things: urllib.request.urlretrieve (stdlib), test and cache option (using os.start for cache file age), re.findall, dict comprehension. |
 | 016 | Apr 14, 2017 | [TITLE](016) | LEARNING |
 | 017 | Apr 15, 2017 | [script to automatically tweet out new @safari Python titles](017) | like the Lynda one, parsing an RSS feed, but only stdlib, so no feedparser, using xml.etree.ElementTree, no requests, using urllib. Also nice exercise converting and calculating with datetime / timedelta |
-| 018 | Apr 16, 2017 | [TITLE](018) | LEARNING |
+| 018 | Apr 16, 2017 | [using #pytest to write tests for @safari RSS scraper (day 017)](018) | testing is a good skill to keep honing. It lets you define your design better and look for edge cases that saves debug headaches later on. pytest is nice, to be further explored ... |
 | 019 | Apr 17, 2017 | [TITLE](019) | LEARNING |
 | 020 | Apr 18, 2017 | [TITLE](020) | LEARNING |
 | 021 | Apr 19, 2017 | [TITLE](021) | LEARNING |
