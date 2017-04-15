@@ -22,7 +22,7 @@
 | 018 | Apr 16, 2017 | [using #pytest to write tests for @safari RSS scraper (day 017)](018) | testing is a good skill to keep honing. It lets you define your design better and look for edge cases that saves debug headaches later on. pytest is nice, to be further explored ... |
 | 019 | Apr 17, 2017 | [TITLE](019) | LEARNING |
 | 020 | Apr 18, 2017 | [monitor #Twitter and post to #slack each time our domain gets mentioned](020) | useful script and exercise. Twitter + Slack API combined == awesome. Aim was to clone/ replace mediatrigger.io (got bothered free trial will end one day ...) |
-| 021 | Apr 19, 2017 | [TITLE](021) | LEARNING |
+| 021 | Apr 19, 2017 | [script to make an index of modules used for this challenge (stdlib >50%)](021) | collections (defaultdict, Counter), os.path, regex, glob, os.listdir, is_std_lib function (from SO), f-strings. Nice to see we heavily use stdlib, Python == batteries included |
 | 022 | Apr 20, 2017 | [TITLE](022) | LEARNING |
 | 023 | Apr 21, 2017 | [TITLE](023) | LEARNING |
 | 024 | Apr 22, 2017 | [TITLE](024) | LEARNING |
