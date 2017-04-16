@@ -25,7 +25,7 @@
 | 021 | Apr 19, 2017 | [script to make an index of modules used for this challenge (stdlib >50%)](021) | collections (defaultdict, Counter), os.path, regex, glob, os.listdir, is_std_lib function (from SO), f-strings. Nice to see we heavily use stdlib, Python == batteries included |
 | 022 | Apr 20, 2017 | [TITLE](022) | LEARNING |
 | 023 | Apr 21, 2017 | [TITLE](023) | LEARNING |
-| 024 | Apr 22, 2017 | [TITLE](024) | LEARNING |
+| 024 | Apr 22, 2017 | [generate color hex codes from random RGBs and color terminal text](024) | nice play with generators, RGB to hex with format, and colorizing the terminal with the [colored](https://pypi.python.org/pypi/colored) package. This could be useful for future cli apps | 
 | 025 | Apr 23, 2017 | [TITLE](025) | LEARNING |
 | 026 | Apr 24, 2017 | [TITLE](026) | LEARNING |
 | 027 | Apr 25, 2017 | [TITLE](027) | LEARNING |
