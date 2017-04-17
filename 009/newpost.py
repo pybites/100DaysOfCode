@@ -71,7 +71,7 @@ def get_cats_or_tags(page, urldir):
 
 
 def today_is_special_day():
-    num_posts = get_num_posts()
+    num_posts = get_num_posts() + 1
     if num_posts % SPECIAL_POST_NUM == 0:
         return True, '{} posts'.format(num_posts)
 
@@ -151,7 +151,7 @@ def main():
 
     if special_day and SPECIAL_SLUG_PREFIX not in slug:
         print('No {} in slug, prepending it'.format(SPECIAL_SLUG_PREFIX))
-        slug = '{}_{}'.format(SPECIAL_SLUG_PREFIX, slug)
+        slug = '{}-{}'.format(SPECIAL_SLUG_PREFIX, slug)
 
     content = [POST_HEADER.format(title=title,
                                   post_time=post_time,
