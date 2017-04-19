@@ -23,7 +23,7 @@
 | 019 | Apr 17, 2017 | [paste in a list of numbers from the clipboard, sort to ascending then copy back to clipboard @AlSweigart #pyperclip #script](019) | simple yet useful script to read in a list of numbers from the clipboard, sort them into ascending order then copy the sorted list back to clipboard. Numbers need to initally be copied with a new line between them |
 | 020 | Apr 18, 2017 | [monitor #Twitter and post to #slack each time our domain gets mentioned](020) | useful script and exercise. Twitter + Slack API combined == awesome. Aim was to clone/ replace mediatrigger.io (got bothered free trial will end one day ...) |
 | 021 | Apr 19, 2017 | [script to make an index of modules used for this challenge (stdlib >50%)](021) | collections (defaultdict, Counter), os.path, regex, glob, os.listdir, is_std_lib function (from SO), f-strings. Nice to see we heavily use stdlib, Python == batteries included |
-| 022 | Apr 20, 2017 | [TITLE](022) | LEARNING |
+| 022 | Apr 20, 2017 | [create and paste #Amazon affiliation link to clipboard #pyperclip @AlSweigart](022) | nice little utility to copy an take Amazon link from clipboard, convert it into an affiliation link and paste it back to clipboard |
 | 023 | Apr 21, 2017 | [TITLE](023) | LEARNING |
 | 024 | Apr 22, 2017 | [generate color hex codes from random RGBs and color terminal text](024) | nice play with generators, RGB to hex with format, and colorizing the terminal with the [colored](https://pypi.python.org/pypi/colored) package. This could be useful for future cli apps | 
 | 025 | Apr 23, 2017 | [TITLE](025) | LEARNING |
