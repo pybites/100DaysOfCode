@@ -6,8 +6,8 @@ import sys
 
 import requests
 
-PYB_CONTENT_DIR = os.environ.get('PYB_CONTENT_DIR') \
-    or sys.exit('Set PYB_CONTENT_DIR env var')
+PYB_CONTENT_DIR = os.environ.get('PYB_CONTENT_DIR') or os.path.expanduser('~')
+print(PYB_CONTENT_DIR); sys.exit()
 LOGGED_IN_USER = os.getlogin()
 DEFAULT_HOURS = 2
 DEFAULT_IMAGE, SPECIAL_IMAGE = 'pb-article.png', 'pb-special.png'
