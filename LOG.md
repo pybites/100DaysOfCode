@@ -26,7 +26,7 @@
 | 022 | Apr 20, 2017 | [create and paste #Amazon affiliation link to clipboard #pyperclip @AlSweigart](022) | nice little utility to copy an take Amazon link from clipboard, convert it into an affiliation link and paste it back to clipboard |
 | 023 | Apr 21, 2017 | [use Counter to count the most common words in a file](023) | we did some time ago, collections module is awesome |
 | 024 | Apr 22, 2017 | [generate color hex codes from random RGBs and color terminal text](024) | nice play with generators, RGB to hex with format, and colorizing the terminal with the [colored](https://pypi.python.org/pypi/colored) package. This could be useful for future cli apps | 
-| 025 | Apr 23, 2017 | [TITLE](025) | LEARNING |
+| 025 | Apr 23, 2017 | [Simple test #database generator script #python #sqlite #contextmanager](025) | Script to generate a quick, test sqlite3 database with 1 table and 3 columns. Can be customised and expanded to suit your needs. Definitely useful for playing around with persistent data. |
 | 026 | Apr 24, 2017 | [TITLE](026) | LEARNING |
 | 027 | Apr 25, 2017 | [TITLE](027) | LEARNING |
 | 028 | Apr 26, 2017 | [TITLE](028) | LEARNING |
