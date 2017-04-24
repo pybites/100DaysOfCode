@@ -27,7 +27,7 @@
 | 023 | Apr 21, 2017 | [use Counter to count the most common words in a file](023) | we did some time ago, collections module is awesome |
 | 024 | Apr 22, 2017 | [generate color hex codes from random RGBs and color terminal text](024) | nice play with generators, RGB to hex with format, and colorizing the terminal with the [colored](https://pypi.python.org/pypi/colored) package. This could be useful for future cli apps | 
 | 025 | Apr 23, 2017 | [Simple test #database generator script #python #sqlite #contextmanager](025) | Script to generate a quick, test sqlite3 database with 1 table and 3 columns. Can be customised and expanded to suit your needs. Definitely useful for playing around with persistent data. |
-| 026 | Apr 24, 2017 | [TITLE](026) | LEARNING |
+| 026 | Apr 24, 2017 | [Simple script to retrieve #movie data from OMDb #API](026) | Get OMDB for movie data, query API by IMDB ID or title. Returns text or html. Uses request_cache to limit repeated calls to API. Could help some folks taking this [this week's challenge](http://pybit.es/codechallenge16.html) |
 | 027 | Apr 25, 2017 | [TITLE](027) | LEARNING |
 | 028 | Apr 26, 2017 | [TITLE](028) | LEARNING |
 | 029 | Apr 27, 2017 | [TITLE](029) | LEARNING |
