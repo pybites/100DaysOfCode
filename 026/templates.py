@@ -1,6 +1,3 @@
-import os
-import sys
-
 TEMPLATE = '''
 Title: {Title}
 Year: {Year}
