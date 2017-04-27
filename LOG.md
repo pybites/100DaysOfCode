@@ -30,7 +30,7 @@
 | 026 | Apr 24, 2017 | [Simple script to retrieve #movie data from OMDb #API](026) | Get OMDB for movie data, query API by IMDB ID or title. Returns text or html. Uses request_cache to limit repeated calls to API. Could help some folks taking this [this week's challenge](http://pybit.es/codechallenge16.html) |
 | 027 | Apr 25, 2017 | [rough script to query the #warcraft #API for a character's mounts](027) | A VERY rough and simple script to query the World of Warcraft API and pull the collected mounts of a specific character. Lots of room to expand this with stripping of JSON data and specifying which data to pull. Just some fun with a new and unconmmon API! |
 | 028 | Apr 26, 2017 | [Jupyter notebook to plot and list new #Python titles on @safari by month](028) | Learning: parsing a Twitter CSV backup dump (@newsafaribooks account), matplotlib, collections, hacking iPython css |
-| 029 | Apr 27, 2017 | [TITLE](029) | LEARNING |
+| 029 | Apr 27, 2017 | [Traffic Lights script to demo #itertools cycle](029) | A nice and easy script to simulate traffic lights using `itertools.cycle` and other stdlib modules cycle. Itertools rocks! |
 | 030 | Apr 28, 2017 | [TITLE](030) | LEARNING |
 | 031 | Apr 29, 2017 | [TITLE](031) | LEARNING |
 | 032 | Apr 30, 2017 | [TITLE](032) | LEARNING |
