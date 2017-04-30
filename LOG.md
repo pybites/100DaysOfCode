@@ -33,7 +33,7 @@
 | 029 | Apr 27, 2017 | [Traffic Lights script to demo #itertools cycle](029) | A nice and easy script to simulate traffic lights using `itertools.cycle` and other stdlib modules cycle. Itertools rocks! |
 | 030 | Apr 28, 2017 | [Script to import movie csv file into an sqlite database](030) | sqlite3, csv, nice groundwork for Flask auto-complete I am working on |
 | 031 | Apr 29, 2017 | [Simple and reusable #Python #script to move all files from one folder to another](031) | A simple but useful script to move all files from one diretory to another using shutil and os. Currently using this in a cron job to mv server log files into an archive folder to keep the log dir clean. |
-| 032 | Apr 30, 2017 | [TITLE](032) | LEARNING |
+| 032 | Apr 30, 2017 | [#Flask #jQuery movie autocomplete](032) | Used DB of day 30. Learned Jinja template extending / inheritance. Nice plugin for mixing Flask/JS: Flask-JSGlue. TODO: upon select movie direct to page showing movie info. |
 | 033 | May 01, 2017 | [TITLE](033) | LEARNING |
 | 034 | May 02, 2017 | [TITLE](034) | LEARNING |
 | 035 | May 03, 2017 | [TITLE](035) | LEARNING |

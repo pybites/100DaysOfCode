@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ JSGlue.include() }}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <h1>{% block header %}{% endblock %}</h1>
+
+    {% include 'form.html' %}
+
+    <div id="content">{% block content %}{% endblock %}</div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+		$(function() {
+			$("#autocomplete").autocomplete({
+				source:function(request, response) {
+					$.getJSON("{{url_for('autocomplete')}}",{
+						q: request.term, // get 'q' with request.args.get in Flask
+					}, function(data) {
+						// matching_results from jsonify
+						// SO q 7617373/limit-results-in-jquery-ui-autocomplete
+        				response(data.matching_results.slice(0, 10));
+					});
+				},
+				minLength: 2,
+                appendTo: "#container",
+				select: function(event, ui) {
+					title = ui.item.value;
+					console.log(title); 
+					alert(title);
+					alert('TODO: get ID of movie and route to page')
+					//location.href = Flask.url_for("show_movie", {"movie_id": 1})
+				}
+			});
+		})
+
+    </script>
+
+</body>
+</html>
