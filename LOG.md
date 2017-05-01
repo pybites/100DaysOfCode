@@ -34,7 +34,7 @@
 | 030 | Apr 28, 2017 | [Script to import movie csv file into an sqlite database](030) | sqlite3, csv, nice groundwork for Flask auto-complete I am working on |
 | 031 | Apr 29, 2017 | [Simple and reusable #Python #script to move all files from one folder to another](031) | A simple but useful script to move all files from one diretory to another using shutil and os. Currently using this in a cron job to mv server log files into an archive folder to keep the log dir clean. |
 | 032 | Apr 30, 2017 | [#Flask #jQuery movie autocomplete](032) | Used DB of day 30. Learned Jinja template extending / inheritance. Nice plugin for mixing Flask/JS: Flask-JSGlue. TODO: upon select movie direct to page showing movie info. |
-| 033 | May 01, 2017 | [TITLE](033) | LEARNING |
+| 033 | May 01, 2017 | [I need to drink more water at work so I wrote a #Python #script to remind (spam) me every hour](033) | A simple script using MIME and a cron job (read the readme.txt) to remind me to drink more water at work! Doesn't email on the weekends or before/after hours. Over the top? Maybe. Satisfying? Hell yes. |
 | 034 | May 02, 2017 | [TITLE](034) | LEARNING |
 | 035 | May 03, 2017 | [TITLE](035) | LEARNING |
 | 036 | May 04, 2017 | [TITLE](036) | LEARNING |
