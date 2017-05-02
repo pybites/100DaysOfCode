@@ -35,7 +35,7 @@
 | 031 | Apr 29, 2017 | [Simple and reusable #Python #script to move all files from one folder to another](031) | A simple but useful script to move all files from one diretory to another using shutil and os. Currently using this in a cron job to mv server log files into an archive folder to keep the log dir clean. |
 | 032 | Apr 30, 2017 | [#Flask #jQuery movie autocomplete](032) | Used DB of day 30. Learned Jinja template extending / inheritance. Nice plugin for mixing Flask/JS: Flask-JSGlue. TODO: upon select movie direct to page showing movie info. |
 | 033 | May 01, 2017 | [I need to drink more water at work so I wrote a #Python #script to remind (spam) me every hour](033) | A simple script using MIME and a cron job (read the readme.txt) to remind me to drink more water at work! Doesn't email on the weekends or before/after hours. Over the top? Maybe. Satisfying? Hell yes. |
-| 034 | May 02, 2017 | [TITLE](034) | LEARNING |
+| 034 | May 02, 2017 | [Import a #podcast feed into a DB table with #SQLAlchemy](034) | Part of the this week's code challenge solution. Found it useful enough to extract this bit as separate nudget |
 | 035 | May 03, 2017 | [TITLE](035) | LEARNING |
 | 036 | May 04, 2017 | [TITLE](036) | LEARNING |
 | 037 | May 05, 2017 | [TITLE](037) | LEARNING |
