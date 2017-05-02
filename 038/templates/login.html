@@ -1,0 +1,7 @@
+<div id="login">
+	{% if g.user %}
+        <a href="{{ url_for('logout') }}">Sign out [{{ g.user.screen_name}}]</a>
+	{% else %}
+        <a href="{{ url_for('login') }}">Sign in with Twitter</a>
+	{% endif %}
+</ul>
