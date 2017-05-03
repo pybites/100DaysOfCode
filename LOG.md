@@ -36,7 +36,7 @@
 | 032 | Apr 30, 2017 | [#Flask #jQuery movie autocomplete](032) | Used DB of day 30. Learned Jinja template extending / inheritance. Nice plugin for mixing Flask/JS: Flask-JSGlue. TODO: upon select movie direct to page showing movie info. |
 | 033 | May 01, 2017 | [I need to drink more water at work so I wrote a #Python #script to remind (spam) me every hour](033) | A simple script using MIME and a cron job (read the readme.txt) to remind me to drink more water at work! Doesn't email on the weekends or before/after hours. Over the top? Maybe. Satisfying? Hell yes. |
 | 034 | May 02, 2017 | [Import a #podcast feed into a DB table with #SQLAlchemy](034) | Part of the this week's code challenge solution. Found it useful enough to extract this bit as separate nudget |
-| 035 | May 03, 2017 | [TITLE](035) | LEARNING |
+| 035 | May 03, 2017 | [Text replacer script using #pyperclip by @AlSweigart](035) | A simple script that will replace any text or characters in text that you have copied to the clipboard. Check out the readme.txt file for more detail. |
 | 036 | May 04, 2017 | [Use #Python #pickle to store and retrieve a defaultdict](036) | Nice and easy persistence tool. Using it with context manager to write random log entries. Each time the script is run the data pickle file gets updates. To get random entries I used a generator. |
 | 037 | May 05, 2017 | [TITLE](037) | LEARNING |
 | 038 | May 06, 2017 | [Simple #Twitter login for your #Flask app using flask_oauthlib](038) | This was a nice addition to [myreadinglist app](http://pybit.es/codechallenge16_review.html): easy authentication flow. Also want to leverage it to show recommended books from followers of the Twitter logged in user. |
