@@ -20,6 +20,6 @@ New Text: Julian is the best!
 
 USE CASE:
 
-There are many use cases, especially at work where a hostname might change andy ou have to update a document etc.
+There are many use cases, especially at work where a hostname might change and you have to update a document etc.
 
 One other situation that came in handy recently was to remove all spaces in a string. This would be done by simply entering a SPACE when choosing what to replace then not entering anything at all at the replacement prompt.
