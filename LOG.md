@@ -38,7 +38,7 @@
 | 034 | May 02, 2017 | [Import a #podcast feed into a DB table with #SQLAlchemy](034) | Part of the this week's code challenge solution. Found it useful enough to extract this bit as separate nudget |
 | 035 | May 03, 2017 | [Text replacer script using #pyperclip by @AlSweigart](035) | A simple script that will replace any text or characters in text that you have copied to the clipboard. Check out the readme.txt file for more detail. |
 | 036 | May 04, 2017 | [Use #Python #pickle to store and retrieve a defaultdict](036) | Nice and easy persistence tool. Using it with context manager to write random log entries. Each time the script is run the data pickle file gets updates. To get random entries I used a generator. |
-| 037 | May 05, 2017 | [TITLE](037) | LEARNING |
+| 037 | May 05, 2017 | [#Python script to pull down an #XML feed and save it](037) | This is an extremely simple script that uses the requests module to pull down an XML feed and write it as is to your local disk for later use by a scraper etc. Created while working on [PCC17](http://pybit.es/codechallenge17.html) |
 | 038 | May 06, 2017 | [Simple #Twitter login for your #Flask app using flask_oauthlib](038) | This was a nice addition to [myreadinglist app](http://pybit.es/codechallenge16_review.html): easy authentication flow. Also want to leverage it to show recommended books from followers of the Twitter logged in user. |
 | 039 | May 07, 2017 | [TITLE](039) | LEARNING |
 | 040 | May 08, 2017 | [TITLE](040) | LEARNING |
