@@ -40,7 +40,7 @@
 | 036 | May 04, 2017 | [Use #Python #pickle to store and retrieve a defaultdict](036) | Nice and easy persistence tool. Using it with context manager to write random log entries. Each time the script is run the data pickle file gets updates. To get random entries I used a generator. |
 | 037 | May 05, 2017 | [#Python script to pull down an #XML feed and save it](037) | This is an extremely simple script that uses the requests module to pull down an XML feed and write it as is to your local disk for later use by a scraper etc. Created while working on [PCC17](http://pybit.es/codechallenge17.html) |
 | 038 | May 06, 2017 | [Simple #Twitter login for your #Flask app using flask_oauthlib](038) | This was a nice addition to [myreadinglist app](http://pybit.es/codechallenge16_review.html): easy authentication flow. Also want to leverage it to show recommended books from followers of the Twitter logged in user. |
-| 039 | May 07, 2017 | [TITLE](039) | LEARNING |
+| 039 | May 07, 2017 | [#Python script to give you every valid dictionary match of a specified letter sequence](039) | A script that uses itertools permutations to check whether a user specified sequence of letters (could be a word!) can be used to make a word or words from the English dictionary. |
 | 040 | May 08, 2017 | [TITLE](040) | LEARNING |
 | 041 | May 09, 2017 | [TITLE](041) | LEARNING |
 | 042 | May 10, 2017 | [TITLE](042) | LEARNING |
