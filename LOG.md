@@ -45,7 +45,7 @@
 | 041 | May 09, 2017 | [Script to check all possible combinations of letters and match against a dictionary. Great for #scrabble](041) | Similar to day 039 but this time it checks all combinations of letters of all lengths, not just the length of the given string. It's a great way to ruin a game of Words with Friends! |
 | 042 | May 10, 2017 | [Using #Python icalendar module to parse FB birthdays cal (ics file)](042) | Prework to download all birthdays into a Flask SQLAlchemy app |
 | 043 | May 11, 2017 | [TITLE](043) | LEARNING |
-| 044 | May 12, 2017 | [TITLE](044) | LEARNING |
+| 044 | May 12, 2017 | [Random name generator, reading in a bunch of names from a CSV file](044) | I used this for Flask SQLAlchemy birthday app to anonymize the data (real dates, fake names), csv source [here](https://raw.githubusercontent.com/yorkshiretwist/WTester/master/WTester/Helpers/CSV_Database_of_First_Names.csv) |
 | 045 | May 13, 2017 | [TITLE](045) | LEARNING |
 | 046 | May 14, 2017 | [TITLE](046) | LEARNING |
 | 047 | May 15, 2017 | [TITLE](047) | LEARNING |
