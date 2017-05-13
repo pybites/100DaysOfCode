@@ -1,9 +1,7 @@
 #!python3
 # steam_scraper.py is a simple web scraper to check for the latest steam games
 
-from pprint import pprint
 from collections import namedtuple
-import requests
 import sqlite3
 
 import feedparser
@@ -11,7 +9,6 @@ import feedparser
 FEED_FILE = "newreleases.xml"
 Game = namedtuple('Game', 'Link')
 games_list = []
-new_games_list = []
 
 def check_create_db():
 	with sqlite3.connect("steam_games.db") as connection:
@@ -29,10 +26,6 @@ def db_connection():
 		c = connection.cursor()
 	return c
 			
-#def check_for_new():
- #   for entry in feed['entries']
-	#    if entry['link']
-			
 def main():
 	
 	check_create_db()
@@ -41,8 +34,7 @@ def main():
 		Game = (entry['title'], entry['link'])
 		games_list.append(Game)
 	
-	#with sqlite3.connect("steam_games.db") as connection:
-		c = db_connection()#connection.cursor()
+		c = db_connection()
 		c.executemany("INSERT INTO new_steam_games VALUES(?, ?)", games_list)
 	
 
