@@ -46,7 +46,7 @@
 | 042 | May 10, 2017 | [Using #Python icalendar module to parse FB birthdays cal (ics file)](042) | Prework to download all birthdays into a Flask SQLAlchemy app |
 | 043 | May 11, 2017 | [Script to read in a list and reverse its contents](043) | I thought it'd be fun to see if I could read in a list of excel cells and reverse their order then paste them out. It's not perfect but it works! |
 | 044 | May 12, 2017 | [Random name generator, reading in a bunch of names from a CSV file](044) | I used this for Flask SQLAlchemy birthday app to anonymize the data (real dates, fake names), csv source [here](https://raw.githubusercontent.com/yorkshiretwist/WTester/master/WTester/Helpers/CSV_Database_of_First_Names.csv) (TODO: could use faker module)|
-| 045 | May 13, 2017 | [TITLE](045) | LEARNING |
+| 045 | May 13, 2017 | [#steam XML feed scraper for new #game releases](045) | A simple script to parse the Steam XML feed for new game releases. Script will store the title and URL data in an SQLite DB. Readme.txt for more info. |
 | 046 | May 14, 2017 | [TITLE](046) | LEARNING |
 | 047 | May 15, 2017 | [TITLE](047) | LEARNING |
 | 048 | May 16, 2017 | [TITLE](048) | LEARNING |
