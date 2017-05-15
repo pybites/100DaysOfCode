@@ -48,7 +48,7 @@
 | 044 | May 12, 2017 | [Random name generator, reading in a bunch of names from a CSV file](044) | I used this for Flask SQLAlchemy birthday app to anonymize the data (real dates, fake names), csv source [here](https://raw.githubusercontent.com/yorkshiretwist/WTester/master/WTester/Helpers/CSV_Database_of_First_Names.csv) (TODO: could use faker module)|
 | 045 | May 13, 2017 | [#steam XML feed scraper for new #game releases](045) | A simple script to parse the Steam XML feed for new game releases. Script will store the title and URL data in an SQLite DB. Readme.txt for more info. |
 | 046 | May 14, 2017 | [Get friends updates from Goodreads #API #books](046) | Base work for this week's challenge 18 to get book recommendations from Goodreads (requires oauth) |
-| 047 | May 15, 2017 | [TITLE](047) | LEARNING |
+| 047 | May 15, 2017 | [Customisable script for pulling down XML feeds with a cron job](047) | This is the accompanying script for [Day 045](https://github.com/pybites/100DaysOfCode/tree/master/045) to automate the pull of the XML feed. It uses requests and a cron job. |
 | 048 | May 16, 2017 | [TITLE](048) | LEARNING |
 | 049 | May 17, 2017 | [TITLE](049) | LEARNING |
 | 050 | May 18, 2017 | [TITLE](050) | LEARNING |
