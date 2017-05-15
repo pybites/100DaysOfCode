@@ -49,7 +49,7 @@
 | 045 | May 13, 2017 | [#steam XML feed scraper for new #game releases](045) | A simple script to parse the Steam XML feed for new game releases. Script will store the title and URL data in an SQLite DB. Readme.txt for more info. |
 | 046 | May 14, 2017 | [Get friends updates from Goodreads #API #books](046) | Base work for this week's challenge 18 to get book recommendations from Goodreads (requires oauth) |
 | 047 | May 15, 2017 | [Customisable script for pulling down XML feeds with a cron job](047) | This is the accompanying script for [Day 045](https://github.com/pybites/100DaysOfCode/tree/master/045) to automate the pull of the XML feed. It uses requests and a cron job. |
-| 048 | May 16, 2017 | [TITLE](048) | LEARNING |
+| 048 | May 16, 2017 | [Use the Faker module to get (random) fake Dutch names](048) | Refactored [random name generator of day 44](044) = much less LOC, and you can specify a "localized provider" to get names in a particular language, very cool. Reminder to self: don't re-invent the wheel, use PyPI more! |
 | 049 | May 17, 2017 | [TITLE](049) | LEARNING |
 | 050 | May 18, 2017 | [TITLE](050) | LEARNING |
 | 051 | May 19, 2017 | [TITLE](051) | LEARNING |
