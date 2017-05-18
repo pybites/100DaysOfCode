@@ -51,7 +51,7 @@
 | 047 | May 15, 2017 | [Customisable script for pulling down XML feeds with a cron job](047) | This is the accompanying script for [Day 045](https://github.com/pybites/100DaysOfCode/tree/master/045) to automate the pull of the XML feed. It uses requests and a cron job. |
 | 048 | May 16, 2017 | [Use the Faker module to get (random) fake Dutch names](048) | Refactored [random name generator of day 44](044) = much less LOC, and you can specify a "localized provider" to get names in a particular language, very cool. Reminder to self: don't re-invent the wheel, use PyPI more! |
 | 049 | May 17, 2017 | [Email contents of an #sqlite db](049) | Code snippet to email data from an sqlite db then flag the data as Emailed to avoid sending it multiple times. Handy for an emailer service. |
-| 050 | May 18, 2017 | [TITLE](050) | LEARNING |
+| 050 | May 18, 2017 | [Use folium to draw a map with cities I traveled to](050) | Folium is awesome and easy to use, definitely will use it for more stuff later on (as well as Bokeh) |
 | 051 | May 19, 2017 | [TITLE](051) | LEARNING |
 | 052 | May 20, 2017 | [TITLE](052) | LEARNING |
 | 053 | May 21, 2017 | [TITLE](053) | LEARNING |
