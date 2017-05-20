@@ -52,7 +52,7 @@
 | 048 | May 16, 2017 | [Use the Faker module to get (random) fake Dutch names](048) | Refactored [random name generator of day 44](044) = much less LOC, and you can specify a "localized provider" to get names in a particular language, very cool. Reminder to self: don't re-invent the wheel, use PyPI more! |
 | 049 | May 17, 2017 | [Email contents of an #sqlite db](049) | Code snippet to email data from an sqlite db then flag the data as Emailed to avoid sending it multiple times. Handy for an emailer service. |
 | 050 | May 18, 2017 | [Use folium to draw a map with cities I traveled to](050) | Folium is awesome and easy to use, definitely will use it for more stuff later on (as well as Bokeh) |
-| 051 | May 19, 2017 | [TITLE](051) | LEARNING |
+| 051 | May 19, 2017 | [Use #Python #requests module on a page behind a login](051) | Wrote a quick script to pull web page data from a page behind a login. In this example I pull my post data from freecycle.org. Will write a detailed post about it this week. |
 | 052 | May 20, 2017 | [TITLE](052) | LEARNING |
 | 053 | May 21, 2017 | [TITLE](053) | LEARNING |
 | 054 | May 22, 2017 | [TITLE](054) | LEARNING |
