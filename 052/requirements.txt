@@ -1,0 +1,4 @@
+prompt-toolkit==1.0.14
+Pygments==2.2.0
+six==1.10.0
+wcwidth==0.1.7
