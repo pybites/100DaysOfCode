@@ -1,6 +1,7 @@
 # code from PyCon talk 'Awesome Commandline Tools by Amjith'
 # https://speakerdeck.com/amjith/awesome-commandline-tools
 # by https://twitter.com/amjithr
+import sys
 
 from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
@@ -22,3 +23,4 @@ while 1:
         print(user_input)
     except EOFError:
         print('Goodbye!')
+        sys.exit()
