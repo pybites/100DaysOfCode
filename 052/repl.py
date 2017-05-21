@@ -12,10 +12,13 @@ SQLCompleter = WordCompleter(['select', 'show', 'from', 'insert', 'update',
                               'delete', 'drop', 'where'], ignore_case=True)
 
 while 1:
-    user_input = prompt(u'SQL>',
+    try:
+        user_input = prompt(u'SQL>',
                         history=FileHistory('history.txt'),
                         auto_suggest=AutoSuggestFromHistory(),
                         completer=SQLCompleter,
                         lexer=SqlLexer,
                         )
-    print(user_input)
+        print(user_input)
+    except EOFError:
+        print('Goodbye!')
