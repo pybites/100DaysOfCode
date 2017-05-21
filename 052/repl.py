@@ -21,6 +21,6 @@ while 1:
                         lexer=SqlLexer,
                         )
         print(user_input)
-    except EOFError:
+    except (EOFError, KeyboardInterrupt):
         print('Goodbye!')
         sys.exit()
