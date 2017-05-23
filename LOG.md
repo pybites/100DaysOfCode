@@ -55,7 +55,7 @@
 | 051 | May 19, 2017 | [Use #Python #requests module on a page behind a login](051) | Wrote a quick script to pull web page data from a page behind a login. In this example I pull my post data from freecycle.org. Will write a detailed post about it this week. |
 | 052 | May 20, 2017 | [Build a user focused REPL with prompt_toolkit (source @amjithr)](052) | Code from PyCon2017 [Awesome Commandline tools session](https://speakerdeck.com/amjith/awesome-commandline-tools) |
 | 053 | May 21, 2017 | [Script to start automating posting to our PyBites FB group](053) | Also 'a' possible solution for challenge 19 of this week |
-| 054 | May 22, 2017 | [TITLE](054) | LEARNING |
+| 054 | May 22, 2017 | [Script to create a person #class and calculate BMI](054) | A simple script to demo basic Python Classes. It calculates the BMI of an individual |
 | 055 | May 23, 2017 | [TITLE](055) | LEARNING |
 | 056 | May 24, 2017 | [TITLE](056) | LEARNING |
 | 057 | May 25, 2017 | [TITLE](057) | LEARNING |
