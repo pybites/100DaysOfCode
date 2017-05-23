@@ -56,7 +56,7 @@
 | 052 | May 20, 2017 | [Build a user focused REPL with prompt_toolkit (source @amjithr)](052) | Code from PyCon2017 [Awesome Commandline tools session](https://speakerdeck.com/amjith/awesome-commandline-tools) |
 | 053 | May 21, 2017 | [Script to start automating posting to our PyBites FB group](053) | Also 'a' possible solution for challenge 19 of this week |
 | 054 | May 22, 2017 | [Script to create a person #class and calculate BMI](054) | A simple script to demo basic Python Classes. It calculates the BMI of an individual |
-| 055 | May 23, 2017 | [TITLE](055) | LEARNING |
+| 055 | May 23, 2017 | [Parse/store #PyCon2017 talks meta data in DB - #BeautifulSoup #sqlite](055) | Fun little exercise to get an index of PyCon talk meta data and load them into a sqlite DB to query them and what not |
 | 056 | May 24, 2017 | [TITLE](056) | LEARNING |
 | 057 | May 25, 2017 | [TITLE](057) | LEARNING |
 | 058 | May 26, 2017 | [TITLE](058) | LEARNING |
