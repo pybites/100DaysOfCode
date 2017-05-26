@@ -60,7 +60,7 @@
 | 056 | May 24, 2017 | [#Python #Flask BMI calculator](056) | A quick but useful BMI calculator created with Python Flask. Will have to run this on Heroku just for the experience! |
 | 057 | May 25, 2017 | [Using the #YouTube #API to determine most popular #PyCon2017 talks](057) | PyCon videos watch / like stats = nice to know, but also   data prep to maybe do some data visualization with Bokeh |
 | 058 | May 26, 2017 | [TITLE](058) | LEARNING |
-| 059 | May 27, 2017 | [TITLE](059) | LEARNING |
+| 059 | May 27, 2017 | [Using the #Twilio #API to send SMS messages](059) | Prework for another app where I want to use Twilio to send reminder notification and text friends :) |
 | 060 | May 28, 2017 | [TITLE](060) | LEARNING |
 | 061 | May 29, 2017 | [TITLE](061) | LEARNING |
 | 062 | May 30, 2017 | [TITLE](062) | LEARNING |

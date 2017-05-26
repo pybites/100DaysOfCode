@@ -1,0 +1,7 @@
+click==6.7
+PyJWT==1.5.0
+PySocks==1.6.7
+pytz==2017.2
+requests==2.14.2
+six==1.10.0
+twilio==6.3.0
