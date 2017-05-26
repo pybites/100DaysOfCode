@@ -32,3 +32,9 @@ Using click for the cli arg parsing:
 
 	$ python send_sms.py --phone +34... --message 'Hi from PyBites again' --media 'http://pybit.es/theme/img/profile.png'
 	MM904cda63e1674c7ca69128cf8feb0448
+
+### Result
+
+SMS from Twilio:
+
+![cat pic](catpic.png)
