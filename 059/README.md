@@ -2,7 +2,7 @@
 
 ### Twilio API
 
-Playing with the Twilio API = very cool. Got the [example code](https://www.twilio.com/docs/libraries/python) working with a free trial
+Playing with the Twilio API = very cool. Got the [example code](https://www.twilio.com/docs/libraries/python) working with a free trial, see [here](send_sms.py).
 
 Two things I ran into:
 
