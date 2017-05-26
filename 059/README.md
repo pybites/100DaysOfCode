@@ -1,4 +1,4 @@
-## 059
+## 059
 
 ### Twilio API
 
@@ -14,7 +14,7 @@ Two things I ran into:
 
 	> Unable to create record: The number +34... is unverified. Trial accounts cannot send messages to unverified numbers; verify +34... at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.
 
-### Usage
+### Usage
 
 Using click for the cli arg parsing:
 

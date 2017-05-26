@@ -6,11 +6,10 @@ import sys
 import click
 from twilio.rest import Client
 
-account_sid = os.environ.get('TWILIO_SID') or sys.exit('need account sid')
-auth_token = os.environ.get('TWILIO_TOK') or sys.exit('need auth token')
-CLIENT = Client(account_sid, auth_token)
-
-FROM_PHONE = os.environ.get('TWILIO_PHONE') or sys.exit('need auth token')
+ACCOUNT_SID = os.environ.get('TWILIO_SID') or sys.exit('need account sid')
+AUTH_TOKEN = os.environ.get('TWILIO_TOK') or sys.exit('need auth token')
+CLIENT = Client(ACCOUNT_SID, AUTH_TOKEN)
+FROM_PHONE = os.environ.get('TWILIO_PHONE') or sys.exit('need Twilio (verified) phone')
 
 
 @click.command()
