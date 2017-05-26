@@ -1,4 +1,24 @@
-'''fun exercise in OOP and dunder methods'''
+'''
+Fun exercise in OOP and dunder methods: 
+
+Give and take away karma points to/from 
+Employee, Manager, Director, VicePresident
+
+Final Karma is points * klout which each 
+higher rank (subclass of Employee) has more off.
+
+The lshift and rshift special methods make the syntax
+for giving / taking away karma pretty cool:
+
+obj << 3 = give 3 points to obj karma
+obj >> 3 = take 3 points of obj karma 
+
+I was going to use
++obj -obj
+++obj --obj
+
+with pos/neg dunders but this might be too obscure.
+'''
 
 MAX_POINTS = 3
 
@@ -52,7 +72,7 @@ class Director(Employee):
 
 
 class VicePresident(Employee):
-    '''She will get be world famous lol'''
+    '''She will be world famous lol'''
 
     def __init__(self, name):
         super().__init__(name)
