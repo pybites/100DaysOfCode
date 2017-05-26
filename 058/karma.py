@@ -10,15 +10,6 @@ class Member:
         self.karma = karma
         Member.count += 1
 
-    '''
-    # these are cool but pretty obscure code like ---m and ++m
-    def __pos__(self):
-        self.karma += 1
-
-    def __neg__(self):
-        self.karma -= 1
-    '''
-
     def _validation(self, points):
         if not isinstance(points, int) or abs(points) > max_points:
             raise ValueError('need int points of <= {}'.format(max_points))
