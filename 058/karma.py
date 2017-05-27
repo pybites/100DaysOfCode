@@ -80,43 +80,43 @@ class VicePresident(Employee):
 
 
 if __name__ == '__main__':
-    m = Employee('pybites')
-    m << 3
+    e1 = Employee('pybites')
+    e1 << 3
     try:
-        m << 4
+        e1 << 4
         raise Exception('should not get here, max is 3 points + or -')
     except:
         pass
-    m >> 2
+    e1 >> 2
     try:
-        m >> 5
+        e1 >> 5
         raise Exception('should not get here, max is 3 points + or -')
     except:
         pass
-    m >> 1
-    assert m.karma == 0
-    m << 2
-    m << 3
-    assert m.karma == 5
+    e1 >> 1
+    assert e1.karma == 0
+    e1 << 2
+    e1 << 3
+    assert e1.karma == 5
+    print(e1)
 
     print()
     print('ok look at how unfair this script is ;)')
     print('with same points assigned to each roles:')
     print()
 
-    a, b = Employee('bob'), Manager('julian')
-    c, d = Director('tom'), VicePresident('tim')
-    a << 3; a << 2; a >> 1; a << 2
-    b << 3; b << 2; b >> 1; b << 2
-    c << 3; c << 2; c >> 1; c << 2
-    d << 3; d << 2; d >> 1; d << 2
-    print('\n'.join([str(p) for p in [a, b, c, d]]))
+    e2, m1 = Employee('bob'), Manager('julian')
+    d1, v1 = Director('tom'), VicePresident('tim')
+    e2 << 3; e2 << 2; e2 >> 1; e2 << 2
+    m1 << 3; m1 << 2; m1 >> 1; m1 << 2
+    d1 << 3; d1 << 2; d1 >> 1; d1 << 2
+    v1 << 3; v1 << 2; v1 >> 1; v1 << 2
+    print('\n'.join([str(p) for p in [e2, m1, d1, v1]]))
 
-    assert a.karma == 6
-    assert b.karma == 12
-    assert c.karma == 18
-    assert d.karma == 24
+    assert e2.karma == 6
+    assert m1.karma == 12
+    assert d1.karma == 18
+    assert v1.karma == 24
 
     print()
     print('Community has {} members (cls var)'.format(Employee.count))
-    print('1st Employee instance was for testing so was hidden')
