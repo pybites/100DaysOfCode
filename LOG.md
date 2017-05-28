@@ -61,7 +61,7 @@
 | 057 | May 25, 2017 | [Using the #YouTube #API to determine most popular #PyCon2017 talks](057) | PyCon videos watch / like stats = nice to know, but also   data prep to maybe do some data visualization with Bokeh |
 | 058 | May 26, 2017 | [Playing with OOP and dunder methods in Python](058) | Some practice / example code because this week we have an OOP challenge |
 | 059 | May 27, 2017 | [Using the #Twilio #API to send SMS messages](059) | Prework for another app where I want to use Twilio to send reminder notification and text friends :) |
-| 060 | May 28, 2017 | [TITLE](060) | LEARNING |
+| 060 | May 28, 2017 | [#Python #Flask Pay Calculator using a session object](060) | A simple pay calculator (wage x hours) that demos the use of a Flask Session object so the wage is remembered throughout the session. Very cool stuff! |
 | 061 | May 29, 2017 | [TITLE](061) | LEARNING |
 | 062 | May 30, 2017 | [TITLE](062) | LEARNING |
 | 063 | May 31, 2017 | [TITLE](063) | LEARNING |

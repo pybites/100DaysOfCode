@@ -1,0 +1,38 @@
+<!doctype html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Pay Calculator</title>
+	
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<h1>Pay Calculator</h1>
+
+<body>
+
+<div class="main">
+	<form class="pure-form" method="POST" action="/pay">
+	Hours Worked:<br>
+	<input type="text" name="hours">
+	<button type="submit" class="pure-button pure-button-primary" value="Submit">Submit</button>
+</div>
+
+<div class="main">
+	{% if pay %}
+	    <p>
+        {% print("Total $ earned: {} ".format(pay)) %}
+        </p>
+	{% endif %}
+</div>
+
+<div class="main">
+	<br><a href="/"><button type="button" class="pure-button pure-button-primary">Adjust Wage</button></a>
+</div>
+
+</body>
