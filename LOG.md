@@ -62,7 +62,7 @@
 | 058 | May 26, 2017 | [Playing with OOP and dunder methods in Python](058) | Some practice / example code because this week we have an OOP challenge |
 | 059 | May 27, 2017 | [Using the #Twilio #API to send SMS messages](059) | Prework for another app where I want to use Twilio to send reminder notification and text friends :) |
 | 060 | May 28, 2017 | [#Python #Flask Pay Calculator using a session object](060) | A simple pay calculator (wage x hours) that demos the use of a Flask Session object so the wage is remembered throughout the session. Very cool stuff! |
-| 061 | May 29, 2017 | [TITLE](061) | LEARNING |
+| 061 | May 29, 2017 | [Plan your next book read using the @twilio SMS API (cc @mattmakai)](061) | Fun exercise for our [OOP challenge (#20)](http://pybit.es/codechallenge20.html) using the Twilio API for SMS, click for nice and easy command line argument handling, pytest for testing, and schedule for cron. Using this live now to facilitate a 'reading date' with some friends. They get weekly task lists / goals via SMS, lets see if they read more thanks to this script :) |
 | 062 | May 30, 2017 | [TITLE](062) | LEARNING |
 | 063 | May 31, 2017 | [TITLE](063) | LEARNING |
 | 064 | Jun 01, 2017 | [TITLE](064) | LEARNING |
