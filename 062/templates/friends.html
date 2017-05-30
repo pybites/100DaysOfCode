@@ -1,0 +1,52 @@
+<!doctype html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>My Imaginary Friends List</title>
+	
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<h1>My Imaginary Friends</h1>
+
+<div class="normal">
+	Which friend would you like to view?
+	<form class="pure-form" method="POST" action="/friends">
+		<select name="friend_menu">
+			{% for row in c.execute("SELECT name from friend_details") %}
+			<option value={{ row[0] }}>{{ row[0] }}</option>
+			{% endfor %}
+		</select>
+		<button type="submit" class="pure-button pure-button-primary" value="Submit">Submit</button>
+	</form>
+</div>
+
+
+{% if choice %}
+	<div class="normal">
+		<table class="pure-table pure-table-striped">
+			<tr>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Phone Number</th>
+			</tr>
+			{% for row in c.execute("SELECT * from friend_details WHERE name=?", (choice,)) %}
+				<tr>
+					<td>{{ row[0] }}</td>
+					<td>{{ row[1] }}</td>
+					<td>{{ row[2] }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endif %}
+
+<div class="normal">
+	<br><a href="/"><button type="button" class="normal pure-button pure-button-primary">Home</button></a>
+</div>
+	

@@ -63,7 +63,7 @@
 | 059 | May 27, 2017 | [Using the #Twilio #API to send SMS messages](059) | Prework for another app where I want to use Twilio to send reminder notification and text friends :) |
 | 060 | May 28, 2017 | [#Python #Flask Pay Calculator using a session object](060) | A simple pay calculator (wage x hours) that demos the use of a Flask Session object so the wage is remembered throughout the session. Very cool stuff! |
 | 061 | May 29, 2017 | [Plan your next book read using the @twilio SMS API (cc @mattmakai)](061) | Fun exercise for our [OOP challenge (#20)](http://pybit.es/codechallenge20.html) using the Twilio API for SMS, click for nice and easy command line argument handling, pytest for testing, and schedule for cron. Using this live now to facilitate a 'reading date' with some friends. They get weekly task lists / goals via SMS, lets see if they read more thanks to this script :) |
-| 062 | May 30, 2017 | [TITLE](062) | LEARNING |
+| 062 | May 30, 2017 | [#Python #Flask friends list with #sqlite db](062) | Essentially an address book to track friends with. It utilises sqlite3 for a persistent DB and was particularly tricky to make as it creates a pull down menu for you to select which friend to view! Need to improve the handling of people with the same name though. |
 | 063 | May 31, 2017 | [TITLE](063) | LEARNING |
 | 064 | Jun 01, 2017 | [TITLE](064) | LEARNING |
 | 065 | Jun 02, 2017 | [TITLE](065) | LEARNING |

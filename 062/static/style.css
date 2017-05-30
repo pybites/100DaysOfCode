@@ -1,0 +1,24 @@
+.main {
+	text-align: right;
+	margin: 10px 650px 10px 100px;
+	width: 25%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.div-class {
+	margin: 10px 650px 10px 100px;
+	width: 25%;
+}
+
+.normal {
+	margin: 10px 650px 10px 100px;
+	width: 25%;
+	text-align: left;
+}
