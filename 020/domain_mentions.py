@@ -54,7 +54,9 @@ class MyStreamer(TwythonStreamer):
         try:
             slack.chat.post_message(CHANNEL, post, as_user=True)
         except Exception as exc:
-            logging.error('cannot post to channel: {}'.format(exc))
+            logging.error('\nOH NO!')
+            logging.error('an exception occurred in slack.chat.post_message({}, {}, as_user=True)'.format(CHANNEL, post))
+            logging.error('exception raised by slack API was:\n{}\n'.format(exc))
 
     def on_error(self, status_code, data):
         print('An error occurred: {}, exiting'.format(status_code))
