@@ -9,13 +9,13 @@ class Account:
     def __init__(self, owner, start_balance=0):
         self.owner = owner.title()
         self.start_balance = start_balance
-        self.transactions = []
+        self._transactions = []
 
     # first property use case: computed attributes
 
     @property
     def balance(self):
-        tt = sum(t.amount for t in self.transactions)
+        tt = sum(t.amount for t in self._transactions)
         return self._start_balance + tt
 
     # second property use case: encapsulation
@@ -43,7 +43,7 @@ class Account:
         if not isinstance(amount, int):
             raise TypeError('Amount needs to be of type int')
         t = Transaction(datetime.now(), amount)
-        self.transactions.append(t)
+        self._transactions.append(t)
 
     def __iadd__(self, amount):
         'Magic method to allow for acc += amount'
@@ -57,11 +57,11 @@ class Account:
 
     def __len__(self):
         'len(acc_instance) gives # transactions'
-        return len(self.transactions)
+        return len(self._transactions)
 
     def __str__(self):
         'Nice class reporting when doing str(acc_instance)'
-        tt = ['- {}'.format(t) for t in self.transactions]
+        tt = ['- {}'.format(t) for t in self._transactions]
         s = ['Account of {}:'.format(self.owner),
              'Start Balance: {}'.format(self.start_balance),
              'Transactions:',
