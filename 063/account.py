@@ -27,9 +27,9 @@ class Account:
     @start_balance.setter
     def start_balance(self, balance):
         if not isinstance(balance, int):
-            raise TypeError('Balance needs to be int')
+            raise TypeError('Start balance needs to be int')
         if balance < 0:
-            raise ValueError('Balance cannot be negative')
+            raise ValueError('Start balance cannot be negative')
         self._start_balance = balance
 
     @start_balance.deleter
