@@ -65,7 +65,7 @@
 | 061 | May 29, 2017 | [Plan your next book read using the @twilio SMS API (cc @mattmakai)](061) | Fun exercise for our [OOP challenge (#20)](http://pybit.es/codechallenge20.html) using the Twilio API for SMS, click for nice and easy command line argument handling, pytest for testing, and schedule for cron. Using this live now to facilitate a 'reading date' with some friends. They get weekly task lists / goals via SMS, lets see if they read more thanks to this script :) |
 | 062 | May 30, 2017 | [#Python #Flask friends list with #sqlite db](062) | Essentially an address book to track friends with. It utilises sqlite3 for a persistent DB and was particularly tricky to make as it creates a pull down menu for you to select which friend to view! Need to improve the handling of people with the same name though. |
 | 063 | May 31, 2017 | [Coding an account class using properties, dunders and pytest](063) | Good exercise to explore properties (for today's article) and alo did some magic method goodness to deposit/withdraw amounts from account. |
-| 064 | Jun 01, 2017 | [TITLE](064) | LEARNING |
+| 064 | Jun 01, 2017 | [Prework code challenge #21: ApplianceCost class to calc energy cost](064) | This will be the data model for a simple flask app to calculate cost per appliance given minutes consumption in period, also want to give a dropdown of energy prices per country. This will be fun |
 | 065 | Jun 02, 2017 | [TITLE](065) | LEARNING |
 | 066 | Jun 03, 2017 | [TITLE](066) | LEARNING |
 | 067 | Jun 04, 2017 | [TITLE](067) | LEARNING |
