@@ -1,0 +1,19 @@
+.main {
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: left;
+}
+
+h1 {
+	text-align: center;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.large {
+	padding-top: 300px;
+	font-size: xx-large;
+}
+

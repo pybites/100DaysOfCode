@@ -66,7 +66,7 @@
 | 062 | May 30, 2017 | [#Python #Flask friends list with #sqlite db](062) | Essentially an address book to track friends with. It utilises sqlite3 for a persistent DB and was particularly tricky to make as it creates a pull down menu for you to select which friend to view! Need to improve the handling of people with the same name though. |
 | 063 | May 31, 2017 | [Coding an account class using properties, dunders and pytest](063) | Good exercise to explore properties (for today's article) and alo did some magic method goodness to deposit/withdraw amounts from account. |
 | 064 | Jun 01, 2017 | [Prework code challenge #21: ApplianceCost class to calc energy cost](064) | This will be the data model for a simple flask app to calculate cost per appliance given minutes consumption in period, also want to give a dropdown of energy prices per country. This will be fun |
-| 065 | Jun 02, 2017 | [TITLE](065) | LEARNING |
+| 065 | Jun 02, 2017 | [Use #Python #webbrowser to simplify #Flask testing](065) | Just a nifty little snippet I use to make testing my Flask apps one step easier and faster. Use the webbrowser module to save you time opening and refreshing your Flask app after every code change |
 | 066 | Jun 03, 2017 | [TITLE](066) | LEARNING |
 | 067 | Jun 04, 2017 | [TITLE](067) | LEARNING |
 | 068 | Jun 05, 2017 | [TITLE](068) | LEARNING |
