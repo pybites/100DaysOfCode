@@ -67,7 +67,7 @@
 | 063 | May 31, 2017 | [Coding an account class using properties, dunders and pytest](063) | Good exercise to explore properties (for today's article) and alo did some magic method goodness to deposit/withdraw amounts from account. |
 | 064 | Jun 01, 2017 | [Prework code challenge #21: ApplianceCost class to calc energy cost](064) | This will be the data model for a simple flask app to calculate cost per appliance given minutes consumption in period, also want to give a dropdown of energy prices per country. This will be fun |
 | 065 | Jun 02, 2017 | [Use #Python #webbrowser to simplify #Flask testing](065) | Just a nifty little snippet I use to make testing my Flask apps one step easier and faster. Use the webbrowser module to save you time opening and refreshing your Flask app after every code change |
-| 066 | Jun 03, 2017 | [TITLE](066) | LEARNING |
+| 066 | Jun 03, 2017 | [Use Selenium to login to a site and show content](066) | Work in progress: trying to login to Packt and show ebooks and maybe even make a download manager. |
 | 067 | Jun 04, 2017 | [TITLE](067) | LEARNING |
 | 068 | Jun 05, 2017 | [TITLE](068) | LEARNING |
 | 069 | Jun 06, 2017 | [TITLE](069) | LEARNING |
