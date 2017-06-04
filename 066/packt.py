@@ -19,6 +19,7 @@ PACKT_EMAIL = os.environ.get('PACKT_USER') \
               or sys.exit('please set Packt user in env')
 PACKT_PW = os.environ.get('PACKT_PW') \
            or sys.exit('please set Packt pw in env')
+LOGIN_URL = 'https://www.packtpub.com/login'
 
 # hack ssl errors
 ssl._create_unverified_context()
@@ -27,9 +28,8 @@ ssl._create_unverified_context()
 class Packt:
 
     def __init__(self, email, pw):
-        self.email = email
-        self.pw = pw
-        self.login_url = 'https://www.packtpub.com/login'
+        self._email = email
+        self._pw = pw
         self._driver = self._get_driver()
         try:
             self._login()
@@ -46,11 +46,11 @@ class Packt:
 
     def _login(self):
         'login to site'
-        self._driver.get(self.login_url)
+        self._driver.get(LOGIN_URL)
         self._driver.find_element_by_id('edit-name').send_keys(
-            self.email)
+            self._email)
         self._driver.find_element_by_id('edit-pass').send_keys(
-            self.pw + Keys.RETURN)
+            self._pw + Keys.RETURN)
         self._driver.implicitly_wait(10)  # need time to load page
         self._driver.find_element_by_link_text('My eBooks').click()
         # import pdb; pdb.set_trace()
