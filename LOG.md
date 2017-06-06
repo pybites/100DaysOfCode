@@ -70,7 +70,7 @@
 | 066 | Jun 03, 2017 | [Use Selenium to login to a site and show content](066) | Work in progress: trying to login to Packt and show ebooks and maybe even make a download manager. |
 | 067 | Jun 04, 2017 | [#Python script to pull a random entry from an #sqlite db](067) | A script that pulls a random movie from an sqlite db of movies. Just to demo the random pull procedure. |
 | 068 | Jun 05, 2017 | [@mohhinder translated our 'from PyBites import newsletter' into code](068) | In his own words: Written on iPhone with the Pythonista 3 app as a joke for the PyBites guys, I don't see why it wouldn't work anywhere else though. They always start off their newsletter annoucements with: `from @PyBites import newsletter`, so I turned it into actual code that pulls their feed and opens their latest newsletter in a browser :) - original [source](https://gist.github.com/clamytoe/f302c8b042341deb48bab4f3b7645198) and [tweet](https://twitter.com/mohhinder/status/870208685523456000) |
-| 069 | Jun 06, 2017 | [TITLE](069) | LEARNING |
+| 069 | Jun 06, 2017 | [#Python CLI based #Pomodoro Timer with #webbrowser alarm](069) | Very simple Pomodoro Script I made for myself that launches an alarm tone on YouTube (using the Python webbrowser module) when the time is up. |
 | 070 | Jun 07, 2017 | [TITLE](070) | LEARNING |
 | 071 | Jun 08, 2017 | [TITLE](071) | LEARNING |
 | 072 | Jun 09, 2017 | [TITLE](072) | LEARNING |
