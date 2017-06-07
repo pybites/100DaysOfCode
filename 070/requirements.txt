@@ -1,0 +1,4 @@
+html5lib==0.999999999
+ipykernel==4.6.1
+lxml==3.8.0
+pandas==0.20.2
