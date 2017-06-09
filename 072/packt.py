@@ -21,6 +21,7 @@ HEADERS = {'Connection': 'keep-alive',
            '(KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
 
 DEST_DIR = os.path.join(os.path.expanduser('~'), 'Documents', 'books', 'Packt')
+FMT = '{:>3}) {}'
 
 Book = namedtuple('Book', 'nid title')
 session = requests.Session()
@@ -73,8 +74,6 @@ def download_book(url, book, chunk_size=2000):
 
 
 if __name__ == '__main__':
-    fmt = '{:>3}) {}'
-
     print('Logging in')
     login()
 
@@ -105,7 +104,7 @@ if __name__ == '__main__':
             continue
 
         for idx, book in enumerate(book_matches, 1):
-            print(fmt.format(idx, book.title))
+            print(FMT.format(idx, book.title))
 
         while True:
             bookid = input('Choose book (n for new search): ').lower()
@@ -126,7 +125,7 @@ if __name__ == '__main__':
             while True:
                 links = download_links[book.nid]
                 for idx, url in enumerate(links, 1):
-                    print(fmt.format(idx, url))
+                    print(FMT.format(idx, url))
 
                 downloadid = input('Choose url (c to cancel): ').lower()
                 if downloadid == 'c':
