@@ -50,7 +50,7 @@ def get_product_download_links(soup):
     return books
 
 
-def get_books(soup):
+def extract_metadata_books(soup):
     products = soup.findAll("div", {"class": "product-line"})
     for prod in products:
         nid = prod.attrs.get('nid')
@@ -83,7 +83,7 @@ if __name__ == '__main__':
     soup = Soup(ebooks_html, 'html.parser')
 
     download_links = get_product_download_links(soup)
-    books = list(get_books(soup))
+    books = list(extract_metadata_books(soup))
 
     print()
     print('Packt download manager'.upper())
