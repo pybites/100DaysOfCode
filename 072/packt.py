@@ -26,13 +26,16 @@ Book = namedtuple('Book', 'nid title')
 session = requests.Session()
 
 
-def get_acc_ebooks_html():
+def login():
     form_data = {'email': PACKT_EMAIL,
                  'password': PACKT_PW,
                  'op': 'Login',
                  'form_build_id': '',
                  'form_id': 'packt_user_login_form'}
     session.post(LOGIN_URL, headers=HEADERS, data=form_data)
+
+
+def get_acc_ebooks_html():
     return session.get(EBOOKS_URL, headers=HEADERS).text
 
 
@@ -72,8 +75,12 @@ def download_book(url, book, chunk_size=2000):
 if __name__ == '__main__':
     fmt = '{:>3}) {}'
 
-    print('Logging in and getting book info')
+    print('Logging in')
+    login()
+
+    print('Retrieving books')
     ebooks_html = get_acc_ebooks_html()
+
     soup = Soup(ebooks_html, 'html.parser')
 
     download_links = get_product_download_links(soup)
