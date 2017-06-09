@@ -1,9 +1,8 @@
 #!python3
 #date_compare.py is a quick script to calculate how many days fall between two dates
-#TODO: Strip out the timestamp from the returned days timedelta string! (Ran out of time).
 
-from datetime import datetime
 from dateutil.parser import parse
+
 
 def date_entry():
     date1 = parse(input("Please enter the first date in format mm/dd/year:"))
@@ -26,4 +25,4 @@ def date_calc(d1, d2):
 
 if __name__ == "__main__":
     days = date_entry()
-    print("\n %s day(s) between these two dates." % (days))
+    print("\n %s day(s) between these two dates." % (days.days))
