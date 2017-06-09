@@ -16,7 +16,7 @@ REQUEST-URL = 'https://my.freecycle.org/home/posts'
 payload = {
     'username-input-name': 'username',
 	'password-input-name': 'password'  #Preferably set your password in an env variable and sub it in.
-)
+}
 
 with requests.Session() as session:
     post = session.post(POST-LOGIN-URL, data=payload)
