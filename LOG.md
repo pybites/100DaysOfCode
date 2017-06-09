@@ -73,7 +73,7 @@
 | 069 | Jun 06, 2017 | [#Python CLI based #Pomodoro Timer with #webbrowser alarm](069) | Very simple Pomodoro Script I made for myself that launches an alarm tone on YouTube (using the Python webbrowser module) when the time is up. |
 | 070 | Jun 07, 2017 | [How to parse html tables with #pandas (#jupyter notebook)](070) | Prep work for tomorrow's article where I will show you how Pandas can relieve the pain of parsing nasty html tables |
 | 071 | Jun 08, 2017 | [How to calculate the # of days between two dates #Python #datetime](071) | Simple CLI script to calculate the number of days between two dates. It uses datetime and dateutils to do this. Still need to strip out the timestamp in the final output though. Maybe a regex? Needs investigation. |
-| 072 | Jun 09, 2017 | [TITLE](072) | LEARNING |
+| 072 | Jun 09, 2017 | [Packt ebook download manager](072) | Using requests to login to Packt, BeautifulSoup to parse the account/ebooks page for links, letting user download his/her books via interactive script |
 | 073 | Jun 10, 2017 | [TITLE](073) | LEARNING |
 | 074 | Jun 11, 2017 | [TITLE](074) | LEARNING |
 | 075 | Jun 12, 2017 | [TITLE](075) | LEARNING |
