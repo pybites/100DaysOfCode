@@ -59,14 +59,18 @@ def extract_metadata_books(soup):
             yield Book(nid=nid, title=title)
 
 
-def download_book(url, book, chunk_size=2000):
-    print('Downloading {}'.format(url))
-    r = session.get(url, headers=HEADERS, stream=True)
+def _create_out_file(book, url):
     title = book.title.lower().replace('ebook', '')
     fname = re.sub('[^.a-z]+', '-', title).strip('-')
     ext = url.split('/')[-1]
     file_name = '{}.{}'.format(fname, ext)
-    out_file = os.path.join(DEST_DIR, file_name)
+    return os.path.join(DEST_DIR, file_name)
+
+
+def download_book(url, book, chunk_size=2000):
+    print('Downloading {}'.format(url))
+    r = session.get(url, headers=HEADERS, stream=True)
+    out_file = _create_out_file(book)
     print('Saving to {}'.format(out_file))
     with open(out_file, 'wb') as fd:
         for chunk in r.iter_content(chunk_size):
