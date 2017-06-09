@@ -78,6 +78,9 @@ def download_book(url, book, chunk_size=2000):
 
 
 if __name__ == '__main__':
+    print('Packt download manager'.upper())
+    print()
+
     print('Logging in')
     login()
 
@@ -88,9 +91,6 @@ if __name__ == '__main__':
 
     download_links = get_product_download_links(soup)
     books = list(extract_metadata_books(soup))
-
-    print()
-    print('Packt download manager'.upper())
 
     # First go: get it working
     # TODO: refactor - "Flat is better than nested."
