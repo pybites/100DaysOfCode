@@ -75,7 +75,7 @@
 | 071 | Jun 08, 2017 | [How to calculate the # of days between two dates #Python #datetime](071) | Simple CLI script to calculate the number of days between two dates. It uses datetime and dateutils to do this. Still need to strip out the timestamp in the final output though. Maybe a regex? Needs investigation. |
 | 072 | Jun 09, 2017 | [Packt ebook download manager](072) | Using requests to login to Packt, BeautifulSoup to parse the account/ebooks page for links, letting user download his/her books via interactive script |
 | 073 | Jun 10, 2017 | [#Python script to download a file using #FTP](073) | A simple and quick script to download a file from an FTP server using ftplib. Would ideally be matched with a cron job. |
-| 074 | Jun 11, 2017 | [TITLE](074) | LEARNING |
+| 074 | Jun 11, 2017 | [Using Pillow to add text and opacity to an image = your own cards](074) | Played with the Pillow module. Script to let user enter an image path (or url) and text to put on the image. Pillow does the rest. Could be a useful recipe to make your own Birthday cards :) |
 | 075 | Jun 12, 2017 | [TITLE](075) | LEARNING |
 | 076 | Jun 13, 2017 | [TITLE](076) | LEARNING |
 | 077 | Jun 14, 2017 | [TITLE](077) | LEARNING |
