@@ -17,6 +17,9 @@ FREE_LEARNING_PAGE = 'free-learning'
 PACKT_FREE_LEARNING_LINK = BASE_URL + '/packt/offers/' + FREE_LEARNING_PAGE
 TIME_LEFT = '{} hours and {} minutes'
 SUBJECT = 'Free Packt ebook of the day: {} (time left: {})'
+HEADERS = {'Connection': 'keep-alive',
+           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 '
+           '(KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
 
 Book = namedtuple('Book', 'title description summary image link timeleft')
 
@@ -26,7 +29,7 @@ def retrieve_page_html():
         with open(FREE_LEARNING_PAGE) as f:
             return f.read()
     else:
-        return requests.get(PACKT_FREE_LEARNING_LINK).text
+        return requests.get(PACKT_FREE_LEARNING_LINK, headers=HEADERS).text
 
 
 def _create_time_left_string(countdown_unix_tstamp):
