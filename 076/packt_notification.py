@@ -67,9 +67,9 @@ def extract_book_data_page(content):
 def generate_mail_msg(book):
     return '''<h2><a href='{link}'>{title}</a></h2>
         <div>{description}</div>
-        <img src='{image}' title='{title}'>
-        <hr>
         {summary_html}
+        <hr>
+        <img src='{image}' title='{title}'>
         <hr>
         <h2>Important</h2>
         <strong>First login to Packt, then use this URL:<br>
