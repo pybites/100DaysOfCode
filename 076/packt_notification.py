@@ -9,9 +9,7 @@ import sys
 from bs4 import BeautifulSoup as Soup
 import requests
 
-FROM_MAIL = os.environ.get('FROM_MAIL')
-TO_MAIL = os.environ.get('TO_PACKT_EMAILS').split()
-
+FROM_MAIL = os.environ.get('FROM_MAIL') or sys.exit('set FROM_MAIL in env')
 BASE_URL = 'https://www.packtpub.com'
 FREE_LEARNING_PAGE = 'free-learning'
 PACKT_FREE_LEARNING_LINK = BASE_URL + '/packt/offers/' + FREE_LEARNING_PAGE
@@ -77,7 +75,7 @@ def generate_mail_msg(book):
                 timeleft=book.timeleft)
 
 
-def mail_html(subject, content, recipients=TO_MAIL):
+def mail_html(recipients, subject, content):
     sender = FROM_MAIL
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
@@ -91,9 +89,11 @@ def mail_html(subject, content, recipients=TO_MAIL):
 
 
 if __name__ == '__main__':
-    if not FROM_MAIL or not TO_MAIL:
-        print('Please set FROM_MAIL and TO_PACKT_EMAILS env vars')
+    if len(sys.argv) < 2:
+        print('Usage {} email1 email2 ...'.format(sys.argv[0]))
         sys.exit(1)
+
+    recipients = sys.argv[1:]
 
     content = retrieve_page_html()
     book = extract_book_data_page(content)
@@ -101,4 +101,4 @@ if __name__ == '__main__':
     subject = SUBJECT.format(book.title, book.timeleft)
     msg_body = generate_mail_msg(book)
 
-    mail_html(subject, msg_body)
+    mail_html(recipients, subject, msg_body)
