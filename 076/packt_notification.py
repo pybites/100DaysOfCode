@@ -10,9 +10,13 @@ from bs4 import BeautifulSoup as Soup
 import requests
 
 FROM_MAIL = os.environ.get('FROM_MAIL') or sys.exit('set FROM_MAIL in env')
+
 BASE_URL = 'https://www.packtpub.com'
 FREE_LEARNING_PAGE = 'free-learning'
 PACKT_FREE_LEARNING_LINK = BASE_URL + '/packt/offers/' + FREE_LEARNING_PAGE
+PROMO_PARAMS = '?utm_source=Pybonacci&utm_medium=referral&utm_campaign=FreeLearning2017CharityReferrals'
+AFFIL_LINK = PACKT_FREE_LEARNING_LINK + PROMO_PARAMS
+
 TIME_LEFT = '{} hours and {} minutes'
 SUBJECT = 'Free Packt ebook of the day: {} (time left: {})'
 HEADERS = {'Connection': 'keep-alive',
@@ -66,13 +70,16 @@ def generate_mail_msg(book):
         <img src='{image}' title='{title}'>
         <hr>
         {summary_html}
-        <h2><a href='{link}'>Download in {timeleft}</a></h2>'''.format(
+        <hr>
+        <h2>Important</h2>
+        <strong>First login to Packt, then use this URL:<br>
+        <a href='{url}'>{url}</a></strong>'''.format(
                 link=book.link,
                 title=book.title,
                 description=book.description,
                 image=book.image,
                 summary_html=book.summary,
-                timeleft=book.timeleft)
+                url=AFFIL_LINK)
 
 
 def mail_html(recipients, subject, content):
