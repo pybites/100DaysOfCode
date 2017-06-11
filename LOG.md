@@ -77,7 +77,7 @@
 | 073 | Jun 10, 2017 | [#Python script to download a file using #FTP](073) | A simple and quick script to download a file from an FTP server using ftplib. Would ideally be matched with a cron job. |
 | 074 | Jun 11, 2017 | [Using Pillow to add text and opacity to an image = your own cards](074) | Played with the Pillow module. Script to let user enter an image path (or url) and text to put on the image. Pillow does the rest. Could be a useful recipe to make your own Birthday cards :) |
 | 075 | Jun 12, 2017 | [TITLE](075) | LEARNING |
-| 076 | Jun 13, 2017 | [TITLE](076) | LEARNING |
+| 076 | Jun 13, 2017 | [Script to scrape Packt free ebook site and send html notification mail](076) | Using requests, BeautifulSoup, namedtuple, datetime. Cronjob script to send out a nice html email with image and metadata of the book, and how long till free offer expires. As it's [hard to automate this now with the new captcha](https://github.com/igbt6/Packt-Publishing-Free-Learning/issues/51) at least we get notified about each new title. |
 | 077 | Jun 14, 2017 | [TITLE](077) | LEARNING |
 | 078 | Jun 15, 2017 | [TITLE](078) | LEARNING |
 | 079 | Jun 16, 2017 | [TITLE](079) | LEARNING |
