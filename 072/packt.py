@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from collections import defaultdict, namedtuple
 import os
 import re
@@ -7,10 +8,8 @@ from bs4 import BeautifulSoup as Soup
 import requests
 
 
-PACKT_EMAIL = os.environ.get('PACKT_USER') \
-              or sys.exit('please set Packt user in env')
-PACKT_PW = os.environ.get('PACKT_PW') \
-           or sys.exit('please set Packt pw in env')
+PACKT_EMAIL = os.environ.get('PACKT_USER') or sys.exit('please set Packt user in env')
+PACKT_PW = os.environ.get('PACKT_PW') or sys.exit('please set Packt pw in env')
 
 BASE_URL = 'https://www.packtpub.com'
 LOGIN_URL = BASE_URL + '/register'
@@ -18,13 +17,19 @@ EBOOKS_URL = BASE_URL + '/account/my-ebooks'
 
 HEADERS = {'Connection': 'keep-alive',
            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 '
-           '(KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+                         '(KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
 
 DEST_DIR = os.path.join(os.path.expanduser('~'), 'Documents', 'books', 'Packt')
 FMT = '{:>3}) {}'
 
 Book = namedtuple('Book', 'nid title')
 session = requests.Session()
+
+
+def check_dir(folder):
+    """Checks to see if a certain directory exist and creates it if it doesn't"""
+    if not os.path.exists(folder):
+        os.makedirs(folder)
 
 
 def login():
@@ -42,9 +47,14 @@ def get_acc_ebooks_html():
 
 def get_product_download_links(soup):
     books = defaultdict(list)
-    for link in soup.findAll("a", href=re.compile(r'/ebook_download/')):
+    prev = 0
+    library = soup.findAll("a", href=re.compile(r'_download/'))
+    for link in library:
         href = link.attrs.get('href')
-        nid = re.sub(r'.*ebook_download/(\d+)/.*', r'\1', href)
+        nid = re.sub(r'.*_download/(\d+)/.*', r'\1', href)
+        if 'code' in nid:
+            nid = prev
+        prev = nid
         full_href = BASE_URL + href
         books[nid].append(full_href)
     return books
@@ -92,8 +102,10 @@ if __name__ == '__main__':
     download_links = get_product_download_links(soup)
     books = list(extract_metadata_books(soup))
 
+    check_dir(DEST_DIR)
+
     # First go: get it working
-    # TODO: refactor - "Flat is better than nested."
+    #  TODO: refactor - "Flat is better than nested."
 
     while True:
         print()
