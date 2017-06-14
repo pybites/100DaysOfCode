@@ -23,6 +23,7 @@ HEADERS = {'Connection': 'keep-alive',
 
 DEST_DIR = os.path.join(os.path.expanduser('~'), 'Documents', 'books', 'Packt')
 FMT = '{:>3}) {}'
+BOOK_FORMATS = ('pdf', 'epub', 'mobi')
 
 Book = namedtuple('Book', 'nid title')
 session = requests.Session()
@@ -71,10 +72,21 @@ def extract_metadata_books(soup):
             yield Book(nid=nid, title=title)
 
 
+def _check_exit(inp):
+    if inp == 'q':
+        print('Bye')
+        sys.exit(0)
+
+
+def _is_code_zip(ext):
+    return ext.lower() not in BOOK_FORMATS
+
+
 def _create_out_file(book, url):
     title = book.title.lower().replace('ebook', '')
     fname = re.sub('[^.a-z]+', '-', title).strip('-')
     ext = url.split('/')[-1]
+    ext = 'zip' if _is_code_zip(ext) else ext
     file_name = '{}.{}'.format(fname, ext)
     return os.path.join(DEST_DIR, file_name)
 
@@ -112,9 +124,7 @@ if __name__ == '__main__':
     while True:
         print()
         search = input('Seach for a book (q for exit): ').lower()
-        if search == 'q':
-            print('Bye')
-            sys.exit(0)
+        _check_exit(search)
 
         book_matches = [b for b in books if search in b.title.lower()]
         if not book_matches:
@@ -125,7 +135,8 @@ if __name__ == '__main__':
             print(FMT.format(idx, book.title))
 
         while True:
-            bookid = input('Choose book (n for new search): ').lower()
+            bookid = input('Choose book (n for new search, q for exit): ').lower()
+            _check_exit(bookid)
             if bookid == 'n':
                 break
 
