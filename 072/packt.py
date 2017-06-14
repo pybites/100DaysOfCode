@@ -8,8 +8,10 @@ from bs4 import BeautifulSoup as Soup
 import requests
 
 
-PACKT_EMAIL = os.environ.get('PACKT_USER') or sys.exit('please set Packt user in env')
-PACKT_PW = os.environ.get('PACKT_PW') or sys.exit('please set Packt pw in env')
+PACKT_EMAIL = os.environ.get('PACKT_USER')
+PACKT_PW = os.environ.get('PACKT_PW')
+if not PACKT_EMAIL or not PACKT_PW:
+    sys.exit('please set Packt user and password in env')
 
 BASE_URL = 'https://www.packtpub.com'
 LOGIN_URL = BASE_URL + '/register'
