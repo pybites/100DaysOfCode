@@ -18,8 +18,8 @@ LOGIN_URL = BASE_URL + '/register'
 EBOOKS_URL = BASE_URL + '/account/my-ebooks'
 
 HEADERS = {'Connection': 'keep-alive',
-           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 '
-                         '(KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36'  # noqa E501
+                         '(KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}  # noqa E501
 
 DEST_DIR = os.path.join(os.path.expanduser('~'), 'Documents', 'books', 'Packt')
 FMT = '{:>3}) {}'
@@ -30,7 +30,7 @@ session = requests.Session()
 
 
 def check_dir(folder):
-    """Checks to see if a certain directory exist and creates it if it doesn't"""
+    """Check to see if directory exists and create it if it doesn't"""
     if not os.path.exists(folder):
         os.makedirs(folder)
 
@@ -78,6 +78,11 @@ def _check_exit(inp):
         sys.exit(0)
 
 
+def _show_books(book_matches):
+    for idx, book in enumerate(book_matches, 1):
+        print(FMT.format(idx, book.title))
+
+
 def _is_code_zip(ext):
     return ext.lower() not in BOOK_FORMATS
 
@@ -123,7 +128,7 @@ if __name__ == '__main__':
 
     while True:
         print()
-        search = input('Seach for a book (q for exit): ').lower()
+        search = input('Seach for a book (q = exit): ').lower()
         _check_exit(search)
 
         book_matches = [b for b in books if search in b.title.lower()]
@@ -131,11 +136,10 @@ if __name__ == '__main__':
             print('No matches, try again')
             continue
 
-        for idx, book in enumerate(book_matches, 1):
-            print(FMT.format(idx, book.title))
+        _show_books(book_matches)
 
         while True:
-            bookid = input('Choose book (n for new search, q for exit): ').lower()
+            bookid = input('Choose book (n = new search, q = exit): ').lower()
             _check_exit(bookid)
             if bookid == 'n':
                 break
@@ -156,20 +160,35 @@ if __name__ == '__main__':
                 for idx, url in enumerate(links, 1):
                     print(FMT.format(idx, url))
 
-                downloadid = input('Choose url (c to cancel): ').lower()
-                if downloadid == 'c':
+                prompt = 'Choose url ids separated by commas (e.g. 1,3)\n'
+                prompt += 'a = download all / c = choose new book / q = exit: '
+                inp = input(prompt).lower()
+                _check_exit(inp)
+
+                if inp == 'c':
+                    _show_books(book_matches)
                     break
 
-                try:
-                    index = int(downloadid) - 1
-                    dl_url = links[index]
-                except (ValueError, IndexError):
-                    print('Wrong input, please try again')
-                    continue
+                if inp == 'a':
+                    download_urls = range(1, len(links)+1)
+                else:
+                    download_urls = [u.strip() for u in
+                                     inp.split(',')]
 
-                try:
-                    download_book(dl_url, book)
+                for url in download_urls:
+                    try:
+                        index = int(url) - 1
+                        dl_url = links[index]
+                    except (ValueError, IndexError):
+                        print('Wrong input, please try again')
+                        continue
+
+                    try:
+                        download_book(dl_url, book)
+                    except Exception as exc:
+                        print('Oops cannot download: ', exc)
+                        continue
+
+                if inp == 'a':
+                    print('All books downloaded')
                     break
-                except Exception as exc:
-                    print('Oops cannot download: ')
-                    print(exc)
