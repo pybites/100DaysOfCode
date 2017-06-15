@@ -79,7 +79,7 @@
 | 075 | Jun 12, 2017 | [#Python script to take screenshots using #pyscreeze @AlSweigart](075) | A Simple script that uses PyScreeze (written by Al Sweigart) to take a screenshot. Handy for any code that may require a screenshot to be taken. Also includes code to allow you to change dirs to save the screenshot somewhere else. |
 | 076 | Jun 13, 2017 | [Script to scrape Packt free ebook site and send html notification mail](076) | Using requests, BeautifulSoup, namedtuple, datetime. Cronjob script to send out a nice html email with image and metadata of the book, and how long till free offer expires. As it's [hard to automate this now with the new captcha](https://github.com/igbt6/Packt-Publishing-Free-Learning/issues/51) at least we get notified about each new title. |
 | 077 | Jun 14, 2017 | [Blank template of a #Python #class and #subclass](077) | A blank template I created that shows the framework of a Python Class and Subclass. Easy to just copy and customise. |
-| 078 | Jun 15, 2017 | [TITLE](078) | LEARNING |
+| 078 | Jun 15, 2017 | [Use a context manager to rollback a transaction](078) | An example for the use of the with statement = resource management. |
 | 079 | Jun 16, 2017 | [TITLE](079) | LEARNING |
 | 080 | Jun 17, 2017 | [TITLE](080) | LEARNING |
 | 081 | Jun 18, 2017 | [TITLE](081) | LEARNING |
