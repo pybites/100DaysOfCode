@@ -82,7 +82,7 @@
 | 078 | Jun 15, 2017 | [Use a context manager to rollback a transaction](078) | An example for the use of the with statement = resource management. |
 | 079 | Jun 16, 2017 | [#Python script to capture exceptions when creating an #sqlite db](079) | A simple but useful script I use to create an sqlite db and check to see if it exists on subsequent runs. The use of `exception` allows me to capture any other errors too. |
 | 080 | Jun 17, 2017 | ["Is this Bob or Julian?" - script to reveal who of @pybites tweets](080) | Fun little exercise that started with [Anthony Shaw asking who he was talking to](https://twitter.com/anthonypjshaw/status/875275923930480641) - it actually became more involved turning/testing out location on our tweets and adding exception handling ... nice practice! (and a funny new service for our PyBites community) |
-| 081 | Jun 18, 2017 | [TITLE](081) | LEARNING |
+| 081 | Jun 18, 2017 | [Using unittest mock patch to test Tweepy code without calling the API](081) | I took my code of day 80 and wrote tests for it. But as it involves an API we don't want to call it and depend on the network. So you can use the mock patch decorator. I did have to save some test data (cache decorator in main script), but once that was done, it was pretty easy. [Here](https://github.com/bbelderbos/quotes_on_design) is another Twitter API mock I did some time ago |
 | 082 | Jun 19, 2017 | [TITLE](082) | LEARNING |
 | 083 | Jun 20, 2017 | [TITLE](083) | LEARNING |
 | 084 | Jun 21, 2017 | [TITLE](084) | LEARNING |
