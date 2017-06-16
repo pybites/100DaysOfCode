@@ -53,6 +53,7 @@ def get_country_code(tweetid):
     # this could be various issues so print the exception string
     except tweepy.error.TweepError as exc:
         raise ValueError('Problem getting tweet:\n{}'.format(exc))
+
     if tweet.user.screen_name != PYBITES:
         raise ValueError('Not a {} tweet'.format(PYBITES))
 
