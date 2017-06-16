@@ -81,7 +81,7 @@
 | 077 | Jun 14, 2017 | [Blank template of a #Python #class and #subclass](077) | A blank template I created that shows the framework of a Python Class and Subclass. Easy to just copy and customise. |
 | 078 | Jun 15, 2017 | [Use a context manager to rollback a transaction](078) | An example for the use of the with statement = resource management. |
 | 079 | Jun 16, 2017 | [TITLE](079) | LEARNING |
-| 080 | Jun 17, 2017 | [TITLE](080) | LEARNING |
+| 080 | Jun 17, 2017 | ["Is this Bob or Julian?" - script to reveal who of @pybites tweets](080) | Fun little exercise that started with [Anthony Shaw asking who is was talking to](https://twitter.com/anthonypjshaw/status/875275923930480641) - it actually became more involved turning/testing out location on our tweets and adding exception handling ... nice practice! (and a funny new service for our PyBites community) |
 | 081 | Jun 18, 2017 | [TITLE](081) | LEARNING |
 | 082 | Jun 19, 2017 | [TITLE](082) | LEARNING |
 | 083 | Jun 20, 2017 | [TITLE](083) | LEARNING |
