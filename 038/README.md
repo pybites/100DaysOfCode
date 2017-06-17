@@ -1,6 +1,6 @@
 ## 038
 
-Snippet to add Twitter login to your Flask app. Basically I got [this](https://github.com/lepture/flask-oauthlib/blob/master/example/twitter.py) working ([myreadinglist app](http://pybit.es/codechallenge16_review.html)) and adapted it slightly when testing.
+Snippet to add Twitter login to your Flask app. Basically I got [this](https://github.com/lepture/flask-oauthlib/blob/master/example/twitter.py) working ([myreadinglist app](https://pybit.es/codechallenge16_review.html)) and adapted it slightly when testing.
 
 ### Steps
 

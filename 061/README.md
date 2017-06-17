@@ -1,6 +1,6 @@
 ## 061
 
-Solution for [Python Code Challenge 20 - OOP fun](http://pybit.es/codechallenge20_review.html): a book/video task planner that sends a weekly SMS (Twilio API) with material to consume.
+Solution for [Python Code Challenge 20 - OOP fun](https://pybit.es/codechallenge20_review.html): a book/video task planner that sends a weekly SMS (Twilio API) with material to consume.
 
 ## Install
 

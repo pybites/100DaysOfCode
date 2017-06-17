@@ -1,6 +1,6 @@
 ## 034
 
-Prep work for [this week's code challenge](http://pybit.es/codechallenge17.html):
+Prep work for [this week's code challenge](https://pybit.es/codechallenge17.html):
 
 Dump feed in sqlite DB:
 

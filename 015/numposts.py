@@ -7,7 +7,7 @@ import urllib.request
 HTML = 'authors.html'
 NOW = int(time.time())
 SECONDS_IN_HOUR = 60*60
-SITE = 'http://pybit.es'
+SITE = 'https://pybit.es'
 URL = '{}/{}'.format(SITE, HTML)
 
 args = sys.argv[1:]

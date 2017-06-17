@@ -7,7 +7,7 @@ import pyperclip
 AMAZON = 'amazon'
 CODE = 'pyb0f-20'
 LINK = 'http://www.amazon.com/dp/{}/?tag={}'
-# http://pybit.es/mastering-regex.html
+# https://pybit.es/mastering-regex.html
 URL = re.compile(r"""
     ^https://(?:www.)?amazon.com/
     [^/]+/
@@ -15,7 +15,7 @@ URL = re.compile(r"""
     (?P<asin>[^/]+)  # the numberic asin follows the dp/
     /ref=.*""", re.VERBOSE)
 
-# http://pybit.es/pyperclip.html
+# https://pybit.es/pyperclip.html
 url = pyperclip.paste()
 
 if AMAZON not in url or '/dp/' not in url:

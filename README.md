@@ -1,6 +1,6 @@
 ## PyBites 100 Days Of Code Challenge
 
-* See our article: [100 Days of PyBites, 100 Days of Code](http://pybit.es/special-100days).
+* See our article: [100 Days of PyBites, 100 Days of Code](https://pybit.es/special-100days).
 
 * We will update this [progress log](LOG.md) as we go and [tweet](https://twitter.com/pybites) with the #100DaysOfCode hashtag.
 
