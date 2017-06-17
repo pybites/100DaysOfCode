@@ -50,7 +50,7 @@ PYB_START = date(year=2016, month=12, day=19)
 SPECIAL_DAY_OFFSETS = (100, 365)
 SPECIAL_POST_NUM = 100
 SPECIAL_SLUG_PREFIX = 'special'
-BASE_URL = 'http://pybit.es'
+BASE_URL = 'https://pybit.es'
 TAG_URL = '{}/tags.html'.format(BASE_URL)
 AUTHORS_URL = '{}/authors.html'.format(BASE_URL)
 
@@ -63,9 +63,9 @@ def get_future_time(hours=DEFAULT_HOURS):
 
 def get_cats_or_tags(page, urldir):
     category = re.compile(
-        r'<a href="http://pybit.es/%s/[^"]+">(\w+)</a>'
-        % urldir)
-    html = requests.get('http://pybit.es/{}.html'.format(page)).text
+        r'<a href="%s/%s/[^"]+">(\w+)</a>'
+        % (BASE_URL, urldir))
+    html = requests.get('{}/{}.html'.format(BASE_URL, page)).text
     return category.findall(html)
 
 
