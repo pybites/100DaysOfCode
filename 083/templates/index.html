@@ -1,0 +1,44 @@
+<!doctype html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Print Timezone Current Time</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<h1 class="centered">Someone Got the Time?</h1>
+<h2 class="centered">Choose a timezone from the list</h2>
+
+<body>
+
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<form method="POST" action="/">
+				<div class="form-group">
+					<select name="tz_menu" class="form-control">
+					{% for tz in tz_list %}
+					<option value={{ tz }}>{{ tz }}</option>
+					{% endfor %}
+					</select>
+					<button type="submit" class="btn btn-primary align-right" value="Submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-6 centered">
+		{% if choice %}
+			<h4>Current Date and Time in {{ choice }} is: {{ tz_time }}</h4>
+		{% endif %}
+		</div>
+	</div>
+</div>
+
+</body>
+	
