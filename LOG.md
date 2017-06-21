@@ -85,7 +85,7 @@
 | 081 | Jun 18, 2017 | [Using unittest mock patch to test Tweepy code without calling the API](081) | I took my code of day 80 and wrote tests for it. But as it involves an API we don't want to call it and depend on the network. So you can use the mock patch decorator. I did have to save some test data (cache decorator in main script), but once that was done, it was pretty easy. [Here](https://github.com/bbelderbos/quotes_on_design) is another Twitter API mock I did some time ago |
 | 082 | Jun 19, 2017 | [#Python script to list all #timezones and their current time](082) | Simple script using pytz and Pendulum to print a list of every timezone as well as the associated CURRENT time. |
 | 083 | Jun 20, 2017 | [#Python #Flask app to print the current time in a given timezone](083) | Useful and cool little Flask app to print the current time for a timezone selected from a drop down menu. Does it exist already? Of course! But so satisfying to make it yourself! |
-| 084 | Jun 21, 2017 | [TITLE](084) | LEARNING |
+| 084 | Jun 21, 2017 | [Use PyGithub to retrieve some basic stats for a GH user](084) | Conclusion: PyGithub makes it really easy to work with the GH API |
 | 085 | Jun 22, 2017 | [TITLE](085) | LEARNING |
 | 086 | Jun 23, 2017 | [TITLE](086) | LEARNING |
 | 087 | Jun 24, 2017 | [TITLE](087) | LEARNING |
