@@ -86,7 +86,7 @@
 | 082 | Jun 19, 2017 | [#Python script to list all #timezones and their current time](082) | Simple script using pytz and Pendulum to print a list of every timezone as well as the associated CURRENT time. |
 | 083 | Jun 20, 2017 | [#Python #Flask app to print the current time in a given timezone](083) | Useful and cool little Flask app to print the current time for a timezone selected from a drop down menu. Does it exist already? Of course! But so satisfying to make it yourself! |
 | 084 | Jun 21, 2017 | [Use PyGithub to retrieve some basic stats for a GH user](084) | Conclusion: PyGithub makes it really easy to work with the GH API |
-| 085 | Jun 22, 2017 | [TITLE](085) | LEARNING |
+| 085 | Jun 22, 2017 | [#Python script to list out the current exchange rate](085) | Script that uses the openexchangerates.org API to pull and print a list of the current exchange rate relative to US$1 |
 | 086 | Jun 23, 2017 | [TITLE](086) | LEARNING |
 | 087 | Jun 24, 2017 | [TITLE](087) | LEARNING |
 | 088 | Jun 25, 2017 | [TITLE](088) | LEARNING |
