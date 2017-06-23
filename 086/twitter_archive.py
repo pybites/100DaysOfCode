@@ -1,7 +1,6 @@
 from collections import Counter
 import csv
 import os
-from pprint import pprint as pp
 import re
 import sys
 
@@ -9,6 +8,9 @@ regex_handle = re.compile(r'(@[a-zA-Z0-9_]+)')
 regex_hashtag = re.compile(r'(#\S+)')
 get_source = re.compile(r'<a.*?>([^<]+).*').sub
 top = 10
+width = 30
+fmt = '{:<20} {:>5}'
+bot = 'pybites'
 
 tweets = Counter()
 mentions = Counter()
@@ -25,6 +27,22 @@ def csv2dict(archive='tweets.csv'):
     with open(archive, 'r') as csvfile:
         for row in csv.DictReader(csvfile):
             yield row
+
+
+def print_header():
+    title = 'Twitter Archive report'
+    print('=' * width)
+    print(title.upper())
+    print('=' * width)
+    print()
+
+
+def print_results(title, counter):
+    print(title + ':')
+    print('-' * width)
+    for key, count in counter.most_common(top):
+        print(fmt.format(key, count))
+    print()
 
 
 if __name__ == '__main__':
@@ -53,29 +71,13 @@ if __name__ == '__main__':
         activity[month] += 1
 
         src = get_source(r'\1', row['source'])
+        if bot in src:
+            src += ' (our bot)'
         sources[src] += 1
 
-    title = 'Twitter Archive report'
-    print(title.upper())
-    print(len(title) * '-')
-    print()
-
-    print('Whose tweets?')
-    pp(tweets.most_common(top))
-    print()
-
-    print('Most mentioned: ')
-    pp(mentions.most_common(top))
-    print()
-
-    print('Most used hashtags: ')
-    pp(hashtags.most_common(top))
-    print()
-
-    print('Most active months: ')
-    pp(activity.most_common(top))
-    print()
-
-    print('Sources used: ')
-    pp(sources.most_common(top))
-    print()
+    print_header()
+    print_results(title='Whose tweets', counter=tweets)
+    print_results(title='Most mentioned', counter=mentions)
+    print_results(title='Most used hashtags', counter=hashtags)
+    print_results(title='Most active months', counter=activity)
+    print_results(title='Sources used', counter=sources)
