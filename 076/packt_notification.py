@@ -14,8 +14,6 @@ FROM_MAIL = os.environ.get('FROM_MAIL') or sys.exit('set FROM_MAIL in env')
 BASE_URL = 'https://www.packtpub.com'
 FREE_LEARNING_PAGE = 'free-learning'
 PACKT_FREE_LEARNING_LINK = BASE_URL + '/packt/offers/' + FREE_LEARNING_PAGE
-PROMO_PARAMS = '?utm_source=Pybonacci&utm_medium=referral&utm_campaign=FreeLearning2017CharityReferrals'
-AFFIL_LINK = PACKT_FREE_LEARNING_LINK + PROMO_PARAMS
 
 TIME_LEFT = '{} hours and {} minutes'
 SUBJECT = 'Free Packt ebook of the day: {} (time left: {})'
@@ -74,15 +72,16 @@ def generate_mail_msg(book):
         <hr>
         <img src='{image}' title='{title}'>
         <hr>
-        <h2>Important</h2>
-        <strong>First login to Packt, then use this URL:<br>
-        <a href='{url}'>{url}</a></strong>'''.format(
+        <h2>Download</h2>
+        <p>Automating Captchas sucks. Just go to 
+        <a href='{url}'>{url}</a>, login and grab 
+        your copy. <strong>Enjoy!</strong></p>'''.format(
                 link=book.link,
                 title=book.title,
                 description=book.description,
                 image=book.image,
                 summary_html=book.summary,
-                url=AFFIL_LINK)
+                url=PACKT_FREE_LEARNING_LINK)
 
 
 def mail_html(recipients, subject, content):
