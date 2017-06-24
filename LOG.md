@@ -88,7 +88,7 @@
 | 084 | Jun 21, 2017 | [Use PyGithub to retrieve some basic stats for a GH user](084) | Conclusion: PyGithub makes it really easy to work with the GH API |
 | 085 | Jun 22, 2017 | [#Python script to list out the current exchange rate](085) | Script that uses the openexchangerates.org API to pull and print a list of the current exchange rate relative to US$1 |
 | 086 | Jun 23, 2017 | [Script to pull some quick stats from a #Twitter Archive CSV](086) | Using Counter and csv.Dictreader. Simple exercise, yet useful data. You can run it yourself downloading your Twitter Archive in Settings |
-| 087 | Jun 24, 2017 | [TITLE](087) | LEARNING |
+| 087 | Jun 24, 2017 | [Currency Conversion script using openexchangerates API](087) | A basic but expensive script to convert one currency to another using the openexchangerates API. To use this you'll need an Unlimited subscription. TODO: do this myself using the free plan by performing math conversions myself. |
 | 088 | Jun 25, 2017 | [TITLE](088) | LEARNING |
 | 089 | Jun 26, 2017 | [TITLE](089) | LEARNING |
 | 090 | Jun 27, 2017 | [TITLE](090) | LEARNING |
