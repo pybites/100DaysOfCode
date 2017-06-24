@@ -53,6 +53,9 @@ def extract_book_data_page(content):
     descr_div = title_div.find_next_sibling("div")
     description = descr_div.text.strip()
     summary_html = descr_div.find_next_sibling("div")
+    # sometimes 2nd paragraph = form, then don't include it
+    if 'dotd-main-book-form' in str(summary_html):
+        summary_html = ''
     js_countdown = book_main.find('span', {'class': 'packt-js-countdown'})
     countdown = js_countdown.get('data-countdown-to')
     timeleft = _create_time_left_string(countdown)
