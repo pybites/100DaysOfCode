@@ -1,0 +1,68 @@
+<!doctype html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Overtime Tracker</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<h1 class="centered">Overtime Tracker</h1>
+<h2 class="centered">Track the hours you spend working for the man!</h2>
+
+<body>
+
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 centered btn-group-lg btn-group-vertical">
+			<form method="POST" action="/" id="user-form">
+				<div class="form-group">
+					<label for="date">Date</label>
+					<input type="text" class="form-control" id="date" name="date" placeholder="26-Jun-2017"><br>
+					<label for="start">Start Time</label>
+					<input type="text" class="form-control" id="start" name="start" placeholder="09:00"><br>
+					<label for="end">End Time</label>
+					<input type="text" class="form-control" id="end" name="end" placeholder="18:00"><br>
+					<label for="hours">Hours Worked</label>
+					<input type="number" step="0.25" class="form-control" id="hours" name="hours" placeholder="9"><br>
+					<label for="rate">Overtime Rate</label>
+					<input type="number" step="0.5" class="form-control" id="rate" name="rate" placeholder="1.5"><br>	
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	
+	{% if ot_list %}
+		<div class="col-md-6 centered">
+		<h2> Existing Overtime Data </h2>
+		<table class="table-responsive table-striped table-bordered text-left" align="center" cellpadding="10">
+				<tr>
+					<th>Date</th>
+					<th>Start Time</th>
+					<th>End Time</th>
+					<th>Hours Worked</th>
+					<th>Overtime Rate</th>
+				</tr>
+				{% for i in ot_list %}
+				<tr>
+					<td>{{ i[0] }}</td>
+					<td>{{ i[1] }}</td>
+					<td>{{ i[2] }}</td>
+					<td>{{ i[3] }}</td>
+					<td>{{ i[4] }}</td>
+				</tr>
+				{% endfor %}
+		</table>
+		</div>
+	{% endif %}
+	</div>
+</div>
+
+</body>
+	
