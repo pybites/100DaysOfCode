@@ -93,7 +93,7 @@
 | 089 | Jun 26, 2017 | [#Python #Flask overtime hours tracker. #sqlite](089) | I wrote a simple Flask app to track the overtime hours that I work. It uses an sqlite db and prints existing overtime data on the main page. |
 | 090 | Jun 27, 2017 | [Playing with TheTVDB API to scrape some movies/series info](090) | [thetvdb](http://thetvdb.com), various good wrappers pip installable - today's script lists episodes for a show |
 | 091 | Jun 28, 2017 | [Showing the broadcasting network for a show using TheTVDB API](091) | More [thetvdb](http://thetvdb.com) - I know from friends they need this lookup :) |
-| 092 | Jun 29, 2017 | [TITLE](092) | LEARNING |
+| 092 | Jun 29, 2017 | [#Python script to ping every IP on a specified #network](092) | A simple script that'll ping every IP on a user specified network. Uses the ipaddress and os modules. |
 | 093 | Jun 30, 2017 | [TITLE](093) | LEARNING |
 | 094 | Jul 01, 2017 | [TITLE](094) | LEARNING |
 | 095 | Jul 02, 2017 | [TITLE](095) | LEARNING |
