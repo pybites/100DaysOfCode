@@ -94,7 +94,7 @@
 | 090 | Jun 27, 2017 | [Playing with TheTVDB API to scrape some movies/series info](090) | [thetvdb](http://thetvdb.com), various good wrappers pip installable - today's script lists episodes for a show |
 | 091 | Jun 28, 2017 | [Showing the broadcasting network for a show using TheTVDB API](091) | More [thetvdb](http://thetvdb.com) - I know from friends they need this lookup :) |
 | 092 | Jun 29, 2017 | [#Python script to ping every IP on a specified #network](092) | A simple script that'll ping every IP on a user specified network. Uses the ipaddress and os modules. |
-| 093 | Jun 30, 2017 | [TITLE](093) | LEARNING |
+| 093 | Jun 30, 2017 | [Refactored day 86's Tweet Achive Stats script into a Package](093) | Modularized Twitter Archive script of [day 86](086) turning it into a package. This will serve our post of this week on packaging. |
 | 094 | Jul 01, 2017 | [TITLE](094) | LEARNING |
 | 095 | Jul 02, 2017 | [TITLE](095) | LEARNING |
 | 096 | Jul 03, 2017 | [TITLE](096) | LEARNING |
