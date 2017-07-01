@@ -1,6 +1,4 @@
-from archive import parse_csv
-from archive import calc_stats
-from archive import print_header, print_results
+from archive import parse_csv, calc_stats, print_header, print_results
 
 data = parse_csv()
 
