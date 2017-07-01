@@ -95,7 +95,7 @@
 | 091 | Jun 28, 2017 | [Showing the broadcasting network for a show using TheTVDB API](091) | More [thetvdb](http://thetvdb.com) - I know from friends they need this lookup :) |
 | 092 | Jun 29, 2017 | [#Python script to ping every IP on a specified #network](092) | A simple script that'll ping every IP on a user specified network. Uses the ipaddress and os modules. |
 | 093 | Jun 30, 2017 | [Refactored day 86's Tweet Achive Stats script into a Package](093) | Modularized Twitter Archive script of [day 86](086) turning it into a package. This will serve our post of this week on packaging. |
-| 094 | Jul 01, 2017 | [TITLE](094) | LEARNING |
+| 094 | Jul 01, 2017 | [Simple Python script to #scp get a file from a remote host](094) | Script uses the Paramiko package and SCP to pull a log file from a remote host. Can be easily modified and expanded. |
 | 095 | Jul 02, 2017 | [TITLE](095) | LEARNING |
 | 096 | Jul 03, 2017 | [TITLE](096) | LEARNING |
 | 097 | Jul 04, 2017 | [TITLE](097) | LEARNING |
