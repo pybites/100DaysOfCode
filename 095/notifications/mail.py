@@ -26,9 +26,12 @@ TEMPLATE = '''<tr>
                     <img src="{img}" style="float: right;">
                 </td>
                 <td style='margin: 5px; vertical-align:top;'>
-                    <h4><a href="{link}">{title}</a></h4>
-                    <p>Overview: {overview}</p>
-                    <p>Genres: {genres} / (first) release: {release}</p>
+                    <ul>
+                        <li><strong><a href="{link}">{title}</a></strong></li>
+                        <li>Overview: {overview}</li>
+                        <li>Genres: {genres}</li>
+                        <li>(First) release: {release}</li>
+                    </ul>
                 </td>
               </tr>
             '''
@@ -38,10 +41,11 @@ def generate_mail_msg(items):
     output = []
 
     for kind in items:
-        output.append('<h2>{}</h2>'.format(kind))
+        output.append('<h2>{}</h2>'.format(kind.upper()))
 
         for listing, entries in items[kind].items():
-            output.append('<h3>{}</h3>'.format(listing))
+            listing_header = listing.replace('_', ' ').title()
+            output.append('<h3>{}</h3>'.format(listing_header))
 
             if not entries:
                 output.append('No new items')
