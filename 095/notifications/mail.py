@@ -19,12 +19,18 @@ if not FROM_MAIL or not TO_MAIL:
     print('set FROM_MAIL and TO_MAIL in env')
     sys.exit(1)
 
-# TODO: retrieve director and actors
-TEMPLATE = '''<h4><a href="{link}">{title}</a></h4>
-              <p>Overview: {overview}
-              <img src="{img}" style="float: right;"></p>
-              <p>Genres: {genres} / (first) release: {release}</p>
-              <hr>
+# I know: html tables suck, but necessary in html emails
+# TODO: retrieve director and actors (and filters)
+TEMPLATE = '''<tr>
+                <td style='margin: 5px; vertical-align:top;'>
+                    <img src="{img}" style="float: right;">
+                </td>
+                <td style='margin: 5px; vertical-align:top;'>
+                    <h4><a href="{link}">{title}</a></h4>
+                    <p>Overview: {overview}</p>
+                    <p>Genres: {genres} / (first) release: {release}</p>
+                </td>
+              </tr>
             '''
 
 
@@ -41,6 +47,7 @@ def generate_mail_msg(items):
                 output.append('No new items')
                 continue
 
+            output.append('<table>')
             for entry in sorted(entries,
                                 key=lambda x: datetime.strptime(
                                               x.release_date, '%Y-%m-%d'),
@@ -58,6 +65,7 @@ def generate_mail_msg(items):
                                               img=img,
                                               genres=genres,
                                               release=entry.release_date))
+            output.append('</table>')
 
     return '\n'.join(output)
 
