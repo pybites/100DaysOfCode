@@ -97,7 +97,7 @@
 | 093 | Jun 30, 2017 | [Refactored day 86's Tweet Achive Stats script into a Package](093) | Modularized Twitter Archive script of [day 86](086) turning it into a package. This will serve our post of this week on packaging. |
 | 094 | Jul 01, 2017 | [Simple Python script to #scp get a file from a remote host](094) | Script uses the Paramiko package and SCP to pull a log file from a remote host. Can be easily modified and expanded. |
 | 095 | Jul 02, 2017 | [Class to cache moviedb API responses #shelve #decorator #namedtuple](095) | Part of challenge 25 solution where we query themoviedb API to get upcoming/now-playing movies or airing tv series to send out mail alerts |
-| 096 | Jul 03, 2017 | [Measure which 100Days tweets were most successful (num RT and Favorites)](096) | Using csv to parse downloaded archive, tweepy to query status for each tweet, taking retweet_count and favorite_count, then sort them by adding those two up and print the result in a nice table |
+| 096 | Jul 03, 2017 | [Script to measure which 100Days tweets were most successful (RTs / Favs)](096) | Using csv module to parse downloaded archive, tweepy to query status for each tweet, parsing out retweet_count and favorite_count. I add those up and sort the result descending on this combined number. Curious to see what our most popular tweets were ... |
 | 097 | Jul 04, 2017 | [TITLE](097) | LEARNING |
 | 098 | Jul 05, 2017 | [TITLE](098) | LEARNING |
 | 099 | Jul 06, 2017 | [TITLE](099) | LEARNING |
