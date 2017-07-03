@@ -25,7 +25,7 @@ Tweet = namedtuple('Tweet', 'status text rt fav')
 tweet_stats = {}
 scores = {}
 
-for i, row in enumerate(parse_csv(), 1):
+for row in parse_csv():
     status = row['tweet_id']
     tweet = row['text']
     if tweet.startswith(HASHTAG_100DAYS):
@@ -44,7 +44,6 @@ print('-' * 140)
 for status, score in sorted(scores.items(),
                             key=lambda kv: kv[1],
                             reverse=True):
-
     info = tweet_stats[status]
     print(FMT.format(rt=info.rt,
                      fav=info.fav,
