@@ -98,7 +98,7 @@
 | 094 | Jul 01, 2017 | [Simple Python script to #scp get a file from a remote host](094) | Script uses the Paramiko package and SCP to pull a log file from a remote host. Can be easily modified and expanded. |
 | 095 | Jul 02, 2017 | [Class to cache moviedb API responses #shelve #decorator #namedtuple](095) | Part of challenge 25 solution where we query themoviedb API to get upcoming/now-playing movies or airing tv series to send out mail alerts |
 | 096 | Jul 03, 2017 | [Script to measure which 100Days tweets were most successful (RTs / Favs)](096) | Using csv module to parse downloaded archive, tweepy to query status for each tweet, parsing out retweet_count and favorite_count. I add those up and sort the result descending on this combined number. Curious to see what our most popular tweets were ... |
-| 097 | Jul 04, 2017 | [TITLE](097) | LEARNING |
+| 097 | Jul 04, 2017 | [Create a default #Flask App dir structure for new projects](097) | Unpythonic and simple. A rough script I threw together that creates a basic Flask App directory structure (templates and static folder) with required base files. Will refactor this later but for now it works! |
 | 098 | Jul 05, 2017 | [TITLE](098) | LEARNING |
 | 099 | Jul 06, 2017 | [TITLE](099) | LEARNING |
 | 100 | Jul 07, 2017 | [TITLE](100) | LEARNING |
