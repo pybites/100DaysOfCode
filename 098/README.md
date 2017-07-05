@@ -2,7 +2,7 @@
 
 Create an IG app:
 
-![ig-api.png](ig-api)
+![ig-api.png](ig-api.png)
 
 pip install [python-instagram](https://github.com/facebookarchive/python-instagram)
 
