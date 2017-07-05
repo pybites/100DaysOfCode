@@ -1,24 +1,28 @@
-## IG API
+## 098
 
-Create an IG app:
+Experimenting with the IG API
 
-![ig-api.png](ig-api.png)
+> Script to use the #Instagram #API to authenticate and pull your media
 
-pip install [python-instagram](https://github.com/facebookarchive/python-instagram)
+1. Create an IG app:
 
-Note this library is not actively maintained. [get_access_token.py](https://github.com/facebookarchive/python-instagram/blob/master/get_access_token.py) has a bug: 
+	![ig-api.png](ig-api.png)
 
-	$ python get_access_token.py
-	...
-	instagram.oauth2.OAuth2AuthExchangeError: You must provide a client_id
+		pip install [python-instagram](https://github.com/facebookarchive/python-instagram)
 
-Patch with [this fix](https://github.com/vgavro/python-instagram/commit/9dfc264571ad7c343af3899445d13afedf23e3aa) or make your own method, e.g. [`exchange_code_for_access_token`](https://stackoverflow.com/questions/38329960/instagram-api-keep-raise-you-must-provide-a-client-id-exception-when-i-use-pyt).
+2. Note this library is not actively maintained. [get_access_token.py](https://github.com/facebookarchive/python-instagram/blob/master/get_access_token.py) has a bug: 
 
-Another required fix: when querying my media I got: 
+		$ python get_access_token.py
+		...
+		instagram.oauth2.OAuth2AuthExchangeError: You must provide a client_id
 
-    for comment in entry['comments']['data']:
-	KeyError: 'data'
+	Patch with [this fix](https://github.com/vgavro/python-instagram/commit/9dfc264571ad7c343af3899445d13afedf23e3aa) or make your own method, e.g. [`exchange_code_for_access_token`](https://stackoverflow.com/questions/38329960/instagram-api-keep-raise-you-must-provide-a-client-id-exception-when-i-use-pyt).
 
-Fix [here](https://github.com/facebookarchive/python-instagram/pull/235/files). 
+	Another required fix: when querying my media I got: 
 
-So probably need to fork this repo or make own wrapper using `requests` or something.
+		for comment in entry['comments']['data']:
+		KeyError: 'data'
+
+	Fix [here](https://github.com/facebookarchive/python-instagram/pull/235/files). 
+
+_Conclusion_: probably need to fork this repo or make own wrapper using `requests` or something.
