@@ -101,4 +101,4 @@
 | 097 | Jul 04, 2017 | [Create a default #Flask App dir structure for new projects](097) | Unpythonic and simple. A rough script I threw together that creates a basic Flask App directory structure (templates and static folder) with required base files. Will refactor this later but for now it works! |
 | 098 | Jul 05, 2017 | [Script to use the #Instagram #API to authenticate and pull your media](098) | Experimentation with the Instagram API - hit some bugs which I documented in README, considering making my own wrapper ... |
 | 099 | Jul 06, 2017 | [TITLE](099) | LEARNING |
-| 100 | Jul 07, 2017 | [TITLE](100) | LEARNING |
+| 100 | Jul 07, 2017 | [100DaysOfCode done! 5K LOC!! Day #100 Special: a Histogram of LOC/day](100) | Glob through all our day directories, counting lines per python script. Then pip installed matplotlib and [Plot a histogram from a Dictionary](https://stackoverflow.com/questions/21195179/plot-a-histogram-from-a-dictionary), very easy to do with Python :) - see you for our next 100 Days PyBites Project / Challenge |
