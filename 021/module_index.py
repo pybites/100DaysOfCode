@@ -47,9 +47,14 @@ if __name__ == '__main__':
 
     cnt = Counter()
 
+    min_scripts = 1  # set to higher to limit output to most used modules
+
     for mod, scripts in sorted(index.items()):
+        if len(scripts) < min_scripts:
+            continue
+
         if mod == 'common' or \
-            any(_is_package(dirname, day, mod) or 
+            any(_is_package(dirname, day, mod) or
                 glob.glob(os.path.join(dirname, day, mod + '.py'))
                 for day in scripts):
             source = 'own'
