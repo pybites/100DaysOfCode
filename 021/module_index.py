@@ -51,7 +51,7 @@ if __name__ == '__main__':
             source = 'stdlib' if is_std_lib(mod) else 'pypi'
         cnt[source] += 1
         appeared_in = ', '.join(sorted(scripts))
-        print(f'{mod:<12} | {source:<6} | {appeared_in}')
+        print(f'{mod:<18} | {source:<6} | {appeared_in}')
 
     total = sum(cnt.values())
     print()
