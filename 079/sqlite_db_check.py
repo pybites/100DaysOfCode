@@ -4,7 +4,7 @@
 #The exception is handy because on subsequent runs, it prints a message
 #that the DB exists. It'll also print any other actual errors. Useful!
 
-import sqlite
+import sqlite3
 import sys
 
 with sqlite3.connect("my_database.db") as connection:
