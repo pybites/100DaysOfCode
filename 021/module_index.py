@@ -30,6 +30,11 @@ def get_lines(src):
             yield line
 
 
+def _is_package(dirname, day, mod):
+    mod_dir = os.path.join(dirname, day, mod)
+    return os.path.isdir(mod_dir)
+
+
 if __name__ == '__main__':
     for path in get_dirs():
         day = os.path.basename(path)
@@ -44,7 +49,8 @@ if __name__ == '__main__':
 
     for mod, scripts in sorted(index.items()):
         if mod == 'common' or \
-            any(glob.glob(os.path.join(dirname, day, mod + '.py'))
+            any(_is_package(dirname, day, mod) or 
+                glob.glob(os.path.join(dirname, day, mod + '.py'))
                 for day in scripts):
             source = 'own'
         else:
