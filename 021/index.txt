@@ -1,0 +1,106 @@
+PIL                | pypi   | 074
+__future__         | stdlib | 021, 091
+account            | own    | 063
+archive            | own    | 093
+argparse           | stdlib | 034
+authorize          | own    | 046
+bs4                | pypi   | 055, 066, 068, 076
+click              | pypi   | 053, 059, 061
+codecs             | stdlib | 001
+collections        | stdlib | 001, 021, 023, 034, 036, 042, 045, 055, 057, 063, 076, 084, 086, 095, 096
+colored            | pypi   | 024
+common             | own    | 014, 017
+config             | own    | 007
+configparser       | stdlib | 020
+contextlib         | stdlib | 001, 016, 021, 025, 030, 032, 055, 067
+csv                | stdlib | 001, 030, 032, 044, 050, 086, 096
+datetime           | stdlib | 005, 007, 009, 012, 013, 017, 018, 034, 036, 061, 063, 076, 095
+dateutil           | pypi   | 071
+db                 | own    | 055
+decorators         | own    | 095
+email              | stdlib | 011, 033, 040, 076
+email_list         | own    | 033
+facebook           | pypi   | 053
+faker              | pypi   | 048
+feedparser         | pypi   | 014, 034, 040, 045
+flask              | pypi   | 013, 032, 038, 056, 060, 062, 065, 083, 089, 099
+flask_jsglue       | pypi   | 032
+flask_oauthlib     | pypi   | 038
+folium             | pypi   | 050
+ftplib             | stdlib | 073
+functools          | stdlib | 080, 081, 095
+github             | pypi   | 084
+glob               | stdlib | 003, 021, 099, 100
+goodreads          | pypi   | 046
+icalendar          | pypi   | 042
+imageio            | pypi   | 003
+importlib          | stdlib | 021
+instagram          | pypi   | 098
+ipaddress          | stdlib | 002, 092
+itertools          | stdlib | 029, 039, 041, 044, 048
+json               | stdlib | 027, 032, 085, 087
+logging            | stdlib | 007, 020
+math               | stdlib | 061
+matplotlib         | pypi   | 100
+movies             | own    | 032
+notifications      | own    | 095
+os                 | stdlib | 007, 009, 012, 013, 014, 015, 017, 018, 021, 030, 031, 032, 038, 040, 044, 046, 053, 055, 057, 059, 061, 066, 068, 074, 075, 076, 080, 081, 084, 086, 088, 090, 091, 092, 095, 096, 097, 098, 100
+paramiko           | pypi   | 016, 094
+pdb                | stdlib | 066
+pendulum           | pypi   | 082, 083
+pickle             | stdlib | 036, 046, 080, 081
+plan               | own    | 061
+pprint             | stdlib | 013, 026, 027, 030, 032, 038, 046, 050, 066, 088, 090, 091
+prompt_toolkit     | pypi   | 052
+pygments           | pypi   | 052
+pyperclip          | pypi   | 004, 019, 022, 035, 043
+pyscreeze          | pypi   | 075
+pytest             | pypi   | 061, 063
+pytz               | pypi   | 007, 012, 013, 082, 083
+random             | stdlib | 024, 029, 036, 040, 044
+rauth              | pypi   | 046
+re                 | stdlib | 005, 007, 009, 015, 021, 022, 024, 068, 080, 081, 086, 095
+requests           | pypi   | 005, 007, 009, 012, 013, 026, 027, 037, 047, 051, 057, 068, 074, 076, 085, 087
+requests_cache     | pypi   | 026, 057
+safari             | own    | 018
+schedule           | pypi   | 040, 061
+scp                | pypi   | 094
+selenium           | pypi   | 066
+shelve             | stdlib | 040, 095
+shutil             | stdlib | 031
+slackclient        | pypi   | 088
+slacker            | pypi   | 020
+smtplib            | stdlib | 011, 033, 040, 076
+socket             | stdlib | 017, 018
+sqlalchemy         | pypi   | 034
+sqlite3            | stdlib | 025, 030, 032, 045, 055, 062, 067, 079, 089
+ssl                | stdlib | 001, 017, 018, 034, 038, 044, 055
+stdlib             | own    | 021
+string             | stdlib | 023
+sys                | stdlib | 001, 003, 005, 007, 009, 014, 015, 017, 018, 021, 022, 023, 026, 030, 032, 038, 040, 042, 044, 046, 052, 053, 055, 057, 059, 061, 066, 076, 079, 080, 081, 084, 086, 089, 090, 091, 095, 096, 098
+templates          | own    | 026
+textwrap           | stdlib | 074
+themoviedb         | own    | 095
+time               | stdlib | 014, 015, 029, 034, 040, 061, 069, 088, 095, 096
+titles             | own    | 018
+tmdb_init          | own    | 095
+tmdbsimple         | pypi   | 095
+tvdb_client        | pypi   | 091
+tvdbsimple         | pypi   | 090
+tweepy             | pypi   | 007, 080, 081, 096
+tweets             | own    | 096
+twilio             | pypi   | 059, 061
+twython            | pypi   | 020
+unittest           | stdlib | 081
+urllib             | stdlib | 015, 017, 018, 044, 055
+weather            | own    | 013
+webbrowser         | stdlib | 065, 068, 069
+whotweeted         | own    | 081
+xml                | stdlib | 017, 018, 046
+xmltodict          | pypi   | 046
+
+pypi      :  42 (42.0%)
+stdlib    :  38 (38.0%)
+own       :  20 (20.0%)
+------------------------------
+Total: 100
