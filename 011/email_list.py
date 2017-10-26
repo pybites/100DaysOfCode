@@ -1,0 +1,1 @@
+EMAILS = ['email@domain.com']

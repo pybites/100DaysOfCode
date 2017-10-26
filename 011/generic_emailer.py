@@ -7,13 +7,16 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+from email_list import EMAILS
 
 DATA_FILE = 'scraped_data_file'
 from_addr = 'your_email@gmail.com'
-to_addr = ['some_recipient@gmail.com']
+to_addr = 'some_recipient@gmail.com'
+bcc = EMAILS
+
 msg = MIMEMultipart()
 msg['From'] = from_addr
-msg['To'] = ", ".join(to_addr)
+msg['To'] = to_addr
 msg['Subject'] = 'My Subject Line'
 
 with open(DATA_FILE) as f:
@@ -33,7 +36,7 @@ smtp_server.login(' your_email@gmail.com ', ' GMAIL APPLICATION ID ')
 text = msg.as_string()
 
 #Compile email list: From, To, Email body
-smtp_server.sendmail(from_addr, to_addr, text)
+smtp_server.sendmail(from_addr, [to_addr] + bcc, text)
 
 #Close connection to SMTP server
 smtp_server.quit()
