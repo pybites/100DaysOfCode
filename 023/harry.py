@@ -1,35 +1,31 @@
 from collections import Counter
-from string import punctuation
+from string import punctuation, whitespace
 import sys
 
 
-def strip_punctuation(word):
-    '''Remove punctuation from a word'''
-    return "".join(c for c in word if c not in punctuation)
-
-
-def get_words(text):
-    '''Converts text into set of words without punctuation'''
-    with open(text) as f:
-        words = f.read().lower().split()
-    words = [strip_punctuation(word) for word in words]
-    # could remove stopwords but requires nltk.corpus
-    return filter(None, words)
-
-
-def get_most_common(words, n=None):
-    '''Return n common words, if n is None, return all (also singles)'''
+def most_common_str(s, n=None):
+    words = s.lower().translate(str.maketrans('', '', punctuation)).split()
     return Counter(words).most_common(n)
+
+
+def most_common_re(s, n=None):
+    return Counter(re.findall(rf'[^{punctuation}{whitespace}]+',
+                              s.lower())).most_common(n)
+
+
+def most_common_iter(s, n=None):
+    return Counter(''.join(c for c in w if c not in punctuation)
+                   for w in s.lower().split()).most_common(n)
 
 
 if __name__ == "__main__":
     try:
-        harry = sys.argv[1]
+        file = sys.argv[1]
     except IndexError:
-        harry = 'harry.txt'
+        file = 'harry.txt'
 
-    words = get_words(harry)
-    common_words = get_most_common(words, n=20)
+    with open(file) as f:
+        common_words = most_common_str(f.read(), n=20)
 
     for word, count in common_words:
         print('{:<4} {}'.format(count, word))
