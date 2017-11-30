@@ -12,7 +12,7 @@ def load_dictionary():
     return words
 	
 def check_word(dictionary, word):
-    valid_words = []
+    valid_words = set()
     permutations = []
     perms = list(itertools.permutations(word))
     for i in perms:
@@ -20,8 +20,8 @@ def check_word(dictionary, word):
 
     for i in permutations:
         if i in dictionary:
-            valid_words.append(i)
-    return set(valid_words)
+            valid_words.add(i)
+    return valid_words
 	
 def print_words(words):
     for i in words:
