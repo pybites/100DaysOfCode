@@ -1,9 +1,11 @@
 import paramiko
 from contextlib import contextmanager
 
+from hosts import HOSTS
+
 username = ''
 password = ''
-host_list = []
+host_list = HOSTS
 
 #@contextmanager
 def check_hostname(host_list):
