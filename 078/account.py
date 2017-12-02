@@ -7,7 +7,7 @@ class Account:
     def balance(self):
         return sum(self._transactions)
 
-    def add_transaction(self, amount):
+    def __add__(self, amount):
         if not isinstance(amount, int):
             raise ValueError('please use int for amount')
         self._transactions.append(amount)
@@ -30,7 +30,7 @@ class Account:
 def validate_transaction(acc, amount_to_add):
     with acc as a:
         print('adding {} to account'.format(amount_to_add))
-        a.add_transaction(amount_to_add)
+        a + amount_to_add
         print('new balance would be: {}'.format(a.balance))
         if a.balance < 0:
             raise ValueError('sorry cannot go in debt!')
