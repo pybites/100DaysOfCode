@@ -24,8 +24,8 @@ def get_files(path):
             yield os.path.join(path, fi)
 
 
-def get_lines(src):
-    with open(scr) as f:
+def get_lines(script):
+    with open(script) as f:
         for line in f:
             yield line
 
@@ -38,8 +38,8 @@ def _is_package(dirname, day, mod):
 if __name__ == '__main__':
     for path in get_dirs():
         day = os.path.basename(path)
-        for scr in get_files(path):
-            for line in get_lines(scr):
+        for script in get_files(path):
+            for line in get_lines(script):
                 m = import_regex.match(line)
                 if m:
                     mod = m.groupdict()['module']
