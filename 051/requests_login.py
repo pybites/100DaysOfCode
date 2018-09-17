@@ -5,10 +5,10 @@
 import requests
 
 #This URL will be the URL that your login form points to with the "action" tag.
-POST-LOGIN-URL = 'https://my.freecycle.org/login'
+POST_LOGIN_URL = 'https://my.freecycle.org/login'
 
 #This URL is the page you actually want to pull down with requests.
-REQUEST-URL = 'https://my.freecycle.org/home/posts'
+REQUEST_URL = 'https://my.freecycle.org/home/posts'
 
 
 #username-input-name is the "name" tag associated with the username input field of the login form.
@@ -19,6 +19,6 @@ payload = {
 }
 
 with requests.Session() as session:
-    post = session.post(POST-LOGIN-URL, data=payload)
-	r = session.get(REQUEST-URL)
+    post = session.post(POST_LOGIN_URL, data=payload)
+	r = session.get(REQUEST_URL)
 	print(r.text)   #or whatever else you want to do with the request data!
