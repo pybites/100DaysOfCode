@@ -1,0 +1,2 @@
+This is the text that will be emailed out.
+The main emailer script should point to this file (or another data file of your choice).

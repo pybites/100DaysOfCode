@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 
 from email_list import EMAILS
 
-DATA_FILE = 'scraped_data_file'
+DATA_FILE = 'data.txt'
 from_addr = 'your_email@gmail.com'
 to_addr = 'some_recipient@gmail.com'
 bcc = EMAILS
