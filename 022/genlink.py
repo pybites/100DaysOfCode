@@ -9,7 +9,7 @@ CODE = 'pyb0f-20'
 LINK = 'http://www.amazon.com/dp/{}/?tag={}'
 # https://pybit.es/mastering-regex.html
 URL = re.compile(r"""
-    ^https://(?:www.)?amazon.com/
+    ^https://(?:www.)?amazon.[^/]+?/
     [^/]+/
     dp/
     (?P<asin>[^/]+)  # the numberic asin follows the dp/
