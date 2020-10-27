@@ -1,6 +1,6 @@
 asn1crypto==0.21.1
 cffi==1.9.1
-cryptography==1.8.1
+cryptography==3.2
 idna==2.5
 packaging==16.8
 paramiko
