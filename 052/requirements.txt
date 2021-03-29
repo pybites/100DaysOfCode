@@ -1,4 +1,4 @@
 prompt-toolkit==1.0.14
-Pygments==2.2.0
+Pygments==2.7.4
 six==1.10.0
 wcwidth==0.1.7
