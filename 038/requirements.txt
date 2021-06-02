@@ -2,7 +2,7 @@ click==6.7
 Flask==0.12.1
 Flask-OAuthlib==0.9.3
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 oauthlib==2.0.2
 requests==2.13.0
