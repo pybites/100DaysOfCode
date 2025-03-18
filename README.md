@@ -1,8 +1,8 @@
 ## PyBites 100 Days Of Code Challenge (Mar 30, 2017 - Jul 07, 2017)
 
-* Kicking off the challenge: [100 Days of PyBites, 100 Days of Code](https://pybit.es/special-100days).
+* Kicking off the challenge: [100 Days of PyBites, 100 Days of Code](https://pybit.es/articles/special-100days/).
 
-* Our review article at the end: [200 Days of PyBites, 100 Days of Code and our Next Project](https://pybit.es/special-100days-of-code.html).
+* Our review article at the end: [200 Days of PyBites, 100 Days of Code and our Next Project](https://pybit.es/articles/special-100days-of-code).
 
 * See all we coded in our [progress log](LOG.md) which we [tweeted out](https://twitter.com/pybites) daily with the #100DaysOfCode hashtag.
 
