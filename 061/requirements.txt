@@ -11,4 +11,4 @@ requests==2.16.5
 schedule==0.4.2
 six==1.10.0
 twilio==6.3.0
-urllib3==1.21.1
+urllib3==1.26.5
