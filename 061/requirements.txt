@@ -2,7 +2,7 @@ certifi==2017.4.17
 chardet==3.0.3
 click==6.7
 idna==2.5
-py==1.4.33
+py==1.10.0
 PyJWT==1.5.0
 PySocks==1.6.7
 pytest==3.1.0
